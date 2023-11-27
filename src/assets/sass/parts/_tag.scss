@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+textarea,
+input{
+    &:focus{
+        outline: none;
+    }
+}
+button{
+    border: 0;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+}

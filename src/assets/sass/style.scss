@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// font linklari uchun joy
+// body{
+// assosiy shriftni berib qo'yamiz
+// }
+
+h1 {
+    font-size: 100px;
+}
+
+// bu joyga sliderni olib kelib bog'lab qo'ysak bo'ladi splide ularni ham css filini scss qilib qo'yishimiz kerak
+@import './parts/splide.min'; // bu slider
+@import './parts/var';
+@import './parts/mixin';
+@import './parts/tag';
+@import './parts/grid';
+@import './parts/class';
+@import './parts/slider';

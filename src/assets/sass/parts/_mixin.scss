@@ -1,0 +1,25 @@
+@mixin fb($w){
+    flex-basis: $w;
+    width: $w;
+    max-width: $w;
+}
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flex-medium{
+    display: flex;
+    align-items: center;
+}
+@mixin font{
+    // font-weight: normal;
+    font-style: normal;
+    // line-height: normal;
+    // bu yerga fontlarga qiymatlarini berib mixin qilib ishlatsanggiz bo'ladi
+}
