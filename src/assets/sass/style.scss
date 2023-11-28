@@ -8,15 +8,17 @@
 // assosiy shriftni berib qo'yamiz
 // }
 
-h1 {
-    font-size: 100px;
+.main_container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 // bu joyga sliderni olib kelib bog'lab qo'ysak bo'ladi splide ularni ham css filini scss qilib qo'yishimiz kerak
-@import './parts/splide.min'; // bu slider
 @import './parts/var';
 @import './parts/mixin';
 @import './parts/tag';
 @import './parts/grid';
 @import './parts/class';
-@import './parts/slider';
+@import './parts/header';
+@import './parts/footer';
