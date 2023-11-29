@@ -21,6 +21,11 @@ img {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+dl, ol, ul {
+    margin-bottom: auto !important;
 }
 
 button {
