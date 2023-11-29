@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: 00;
+}
+
+iframe {
+    border: 0;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]):focus,
+select:focus,
+textarea:focus,
+textarea[type=text]:focus {
+    outline: none;
+}
+
+.main_container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

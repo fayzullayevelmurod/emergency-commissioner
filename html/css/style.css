@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]):focus,
+select:focus,
+textarea:focus,
+textarea[type=text]:focus {
+  outline: none;
+}
+
+.main_container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1 {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
