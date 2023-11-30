@@ -1,4 +1,5 @@
 .footer {
+    border-top: 10px solid $footer_border;
     background-color: $footer_bg;
     padding: 74px 0 61px 0;
     .main_container {
@@ -6,6 +7,8 @@
             display: flex;
             align-items: start;
             justify-content: space-between;
+            margin-bottom: 85px;
+            gap: 15px;
         }
 
         .footer_top_left {
@@ -49,6 +52,126 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+            }
+        }
+
+        .footer_top_right {
+
+            .download_app {
+                margin-bottom: 28px;
+            }
+
+            p {
+                margin-bottom: 34px;
+                color: $footer_text;
+                max-width: 240px;
+                font-family: $Factor;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19px;
+
+                span {
+                    display: block;
+                    color: #fff;
+                }
+            }
+        }
+
+        .footer_bottom {
+            p {
+                color: $footer_text;
+                font-family: $Factor;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 0 37px 0;
+        .main_container {
+            .footer_top {
+                justify-content: center;
+                margin-bottom: 42px;
+                .footer_top_left {
+                    .footer_left_in {
+                        gap: 63px;
+                        ul {
+                            li {
+                                margin-bottom: 14px;
+                            }
+                        }
+                    }
+
+                    .footer_messenger {
+                        margin-top: 13px;
+                    }
+                }
+
+                .footer_top_center {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        .main_container {
+            .footer_top {
+                gap: 0;
+                max-width: 220px;
+                margin: 0 auto;
+                flex-direction: column;
+            }
+
+            .footer_top_left {
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+                .footer_messenger {
+                    margin-bottom: 48px;
+                    display: flex;
+                    gap: 3px;
+                    justify-content: center;
+                }
+            }
+
+            .footer_top_right {
+                .download_app {
+                    display: flex;
+
+                    gap: 8px;
+                    margin-bottom: 13px;
+
+                    img {
+                        width: 85px;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-bottom: 29px;
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .footer_bottom {
+                p {
+                    font-size: 12px;
+                    margin-top: 13px;
+                }
             }
         }
     }
