@@ -5,8 +5,20 @@ html(lang="en")
     body 
         include ../includes/header
         
-        .container 
-            h1.bg-danger.text-white Main
+        #reference 
+            include ../includes/home
+            +home(
+                    'last_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Справка"}
+                    ],
+                    'Что делать после ДТП?',
+                    'Здесь вы найдете ответы на наиболее часто задаваемые вопросы по всему, что связано с ДТП, автострахованием, возмещение убытков от ДТП, обжалование автоштрафов и прочие вопросы. Раздел дополняется.',
+                    './images/reference_home_bg.png',
+                    ""
+                )
+
 
         //- Salom
-        include ../includes/footer
+        //- include ../includes/footer

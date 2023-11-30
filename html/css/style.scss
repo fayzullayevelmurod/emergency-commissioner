@@ -4,8 +4,97 @@
 @import './parts/vars';
 @import './parts/header';
 
+#home_2 {
+    background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+    overflow: hidden;
 
+    .main_container {
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 76px;
+    }
+    
+    .breadcrumbs {
+        padding-bottom: 62px;
+        position: relative;
+        z-index: 1;
 
+        li {
+            a, span {
+                color: #6E9ABF;
+                font-family: "Factor A", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+    .home_wrapper {
+        .home_left {
+            max-width: 602px;
+        }
+
+        .home_img {
+            position: absolute;
+            right: 10px;
+            top: 47px;
+            border-radius: 20px 0px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .title {
+            color: #0B1F33;
+            font-family: "Factor A", sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 17px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .description {
+            color: #0B1F33;
+            font-family: "Factor A", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            position: relative;
+            z-index: 1;
+
+            a {
+                color: #1D5DEB;
+                font-family: "Factor A", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .bg_number {
+        color: #FFF;
+        font-family: "DIN Pro", sans-serif;
+        font-size: 290.534px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 20.049px;
+        text-transform: uppercase;
+        position: absolute;
+        width: 100%;
+        opacity: 0.5;
+        transform: rotate(-17.049deg);
+        top: 160px;
+        white-space: nowrap;
+    }
+}
 
 #magazine_home {
     background-image: url('../images/magazine_dektop_img.png');
