@@ -364,6 +364,69 @@ textarea[type=text]:focus {
   line-height: 27px; /* 168.75% */
 }
 
+.services_history {
+  margin-top: 80px;
+  margin-bottom: 200px;
+}
+.services_history .main_container {
+  text-align: center;
+}
+.services_history .main_container h2 {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  margin-bottom: 10px;
+}
+.services_history .main_container h6 {
+  max-width: 646px;
+  margin: 0 auto 30px auto;
+  color: #757F88;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.services_history .main_container span {
+  margin: 0 auto 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.services_history .main_container p {
+  max-width: 605px;
+  margin: 0 auto 35px auto;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+.services_history .main_container p b {
+  display: inline;
+  color: #1D5DEB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
 .footer {
   border-top: 10px solid #C5D3FF;
   background-color: #082665;

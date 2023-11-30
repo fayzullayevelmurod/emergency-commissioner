@@ -219,6 +219,73 @@
 
 }
 
+.services_history {
+    margin-top: 80px;
+    margin-bottom: 200px;
+    .main_container {
+        text-align: center;
+        h2 {
+            color: $main_text;
+            font-family: $Factor;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.8px;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            max-width: 646px;
+            margin: 0 auto 30px auto;
+            color: $main_text2;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+        }
+
+        span {
+            margin: 0 auto 8px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 61px;
+            height: 61px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+            color: $main_text;
+            font-family: $Factor;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p {
+            max-width: 605px;
+            margin: 0 auto 35px auto;
+            color: $main_text;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 35px;
+
+            b {
+                display: inline;
+                color: #1D5DEB;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
 
 
 @import './parts/footer';
