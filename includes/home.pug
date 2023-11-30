@@ -1,0 +1,26 @@
+mixin home(class_name, breadcrumbs, title, subtitle, img_url, link)
+    section#home_2
+        .main_container(class=class_name)
+            ul.breadcrumbs.d-flex.align-items-center.gap-2
+                each val, index in breadcrumbs
+                    if breadcrumbs.length !== index + 1
+                        li 
+                            a(href=val.url)= val.name  
+                        if breadcrumbs.length !== index + 1
+                            li
+                                span
+                                    |>
+                    else
+                        li
+                            span= val.name
+            .home_wrapper
+                .home_left
+                    .title= title
+                    .description= subtitle
+                        if link.length
+                            | &nbsp;
+                            a(href=link)= link 
+                .home_img
+                    img(src=img_url, alt="")
+            .bg_number 
+                | 50-50-50
