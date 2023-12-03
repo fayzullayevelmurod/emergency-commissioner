@@ -498,12 +498,163 @@
     }
 }
 
+.work {
+    .main_container {
+        h2 {
+            margin-top: 100px;
+            color: $main_text;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0 auto 50px auto;
+            max-width: 722px;
+            color: #757F88;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .mobile_img {
+        display: none;
+    }
+}
+
+.partners {
+    background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+    .main_container {
+        position: relative;
+        padding: 100px 0;
+
+        .bg_number {
+            color: #FFF;
+            font-family: "DIN Pro", sans-serif;
+            font-size: 290.534px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 20.049px;
+            text-transform: uppercase;
+            position: absolute;
+            width: 100%;
+            opacity: 0.5;
+            bottom: 55px;
+            white-space: 1nowrap;
+        }
+
+        h2 {
+            position: relative;
+            z-index: 2;
+            color: $main_text;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+        p {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            max-width: 722px;
+            color: #757F88;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+        }
+
+        .about_services_in {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 26px;
+
+            a {
+                width: calc(100% /5 - 26px);
+                display: flex;
+                    img {
+                        width: 100%;
+                    }
+            }
+        }
+    }
+}
+
+.comment {
+    padding: 100px 0;
+    .main_container {
+        text-align: center;
+        h2 {
+            color: $main_text;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        p {
+            max-width: 722px;
+            margin: 0 auto 83px auto;
+            color: $main_text2;
+            text-align: center;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+        }
+
+        img {
+            max-width: 763px;
+        }
+    }
+}
+
 .newsline {
+    overflow: hidden;
     padding: 99px 0 111px 0;
     background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
     .main_container {
         position: relative;
         text-align: center;
+        .bg_number_one {
+            position: absolute;
+            left: -45%;
+            top: -13%;
+            color: #FFF;
+            font-family: "DIN Pro", sans-serif;
+            font-size: 290.534px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 20.049px;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            // width: 100%;
+            opacity: 0.5;
+            white-space: nowrap;
+        }
         .bg_number {
             color: #FFF;
             font-family: "DIN Pro", sans-serif;
@@ -514,13 +665,15 @@
             text-transform: uppercase;
             transform: rotate(-90deg);
             position: absolute;
-            width: 100%;
+            // width: 100%;
             opacity: 0.5;
             bottom: -65px;
-            right: 0;
-            white-space: 1nowrap;
+            right: -37%;
+            white-space: nowrap;
         }
         h2 {
+            position: relative;
+            z-index: 2;
             color: $main_text;
             font-family: $Factor;
             font-size: 40px;
@@ -531,6 +684,8 @@
         }
 
         span {
+            position: relative;
+            z-index: 2;
             color: #757F88;
             font-family: $Factor;
             font-size: 16px;
@@ -540,16 +695,20 @@
         }
 
         p {
+            position: relative;
+            z-index: 2;
             color: #0B1F33;
             font-family: $Factor;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 27px; /* 168.75% */
+            line-height: 27px;
             margin-bottom: 25px;
         }
 
         .newsline_link {
+            position: relative;
+            z-index: 2;
             padding: 7px 22px;
             border-radius: 8px;
             background: #0D4CD3;
@@ -558,10 +717,8 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
-            line-height: 27px; /* 168.75% */
+            line-height: 27px;
         }
-
-        
     }
 }
 
