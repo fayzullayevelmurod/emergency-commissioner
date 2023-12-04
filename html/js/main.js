@@ -112,3 +112,37 @@ if (real_company) {
         }
     })
 }
+
+let init3 = false;
+let scheme_work_3;
+let example_3 = document.querySelector('.index_card_1')
+
+if (example_3) {
+    function swiperCard3() {
+        if (window.innerWidth <= 992) {
+            if (!init3) {
+                init3 = true;
+                scheme_work_3 = new Swiper(".accident .index_card_1", {
+                    slidesPerView: 1.1,
+                    centeredSlides: true,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: ".scheme_work_3_pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        500: {
+                            slidesPerView: 2,
+                        }
+                    }
+                });
+            }
+        } else if (init3) {
+            scheme_work_3.destroy();
+            init2 = false;
+        }
+    }
+    swiperCard3();
+    window.addEventListener("resize", swiperCard3);
+}

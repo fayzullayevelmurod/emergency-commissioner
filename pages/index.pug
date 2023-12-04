@@ -16,7 +16,7 @@ html(lang="en")
                         a(href="tel:505050")
                             img(src="./images/phone_icon.svg", alt="")
                             | 50-50-50 
-                        img(src="./images/home_icon.svg", alt="")
+                        img.icon(src="./images/home_icon.svg", alt="")
 
                     .home_bottom 
                         .home_bottom_block 
@@ -34,57 +34,81 @@ html(lang="en")
                 h2 Что делать при ДТП?
                 p Чтобы правильно оформить ДТП следуйте инструкции:
 
-                .accident_in 
-                    .accident_card 
-                        span.circle
+                .swiper.index_card_1.accident_in 
+                    .swiper-wrapper
+                        .swiper-slide
+                            .accident_card 
+                                span.circle
+                                span.number 1
+                                p Заглушите двигатель и не меняйте положение автомобиля.
+                        .swiper-slide
+                            .accident_card 
+                                span.circle
+                                span.number 2
+                                p Включите аварийную сигнализацию.
+                        .swiper-slide
+                            .accident_card 
+                                span.circle
+                                span.number 3
+                                p Выставьте знак аварийной остановки на 15 метров от ДТП.
+                        .swiper-slide
+                            .accident_card 
+                                span.circle
+                                span.number 4
+                                p 
+                                    | Вызовите аварийного комиссара позвонив на #[br]
+                                    a(href="#") 50-50-50
+                                    | . 
+                        .swiper-slide
+                            .accident_card 
+                                span.circle
+                                span.number 5
+                                p Далее следуйте подсказкам полученым от нашего оператора.
+                .scheme_work_3_pagination
 
-                        span.number 1
+        //- section.assistance 
+        //-     .main_container 
+        //-         h2 Как работает наша служба помощи при ДТП
 
-                        p Заглушите двигатель и не меняйте положение автомобиля.
+        //-         .assistance_in 
+        //-             .assistance_card 
+        //-                 img(src="./images/assistance1.png", alt="")
 
-        section.assistance 
-            .main_container 
-                h2 Как работает наша служба помощи при ДТП
+        //-                 h4 Звонок
+        //-                 p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
 
-                .assistance_in 
-                    .assistance_card 
-                        img(src="./images/assistance1.png", alt="")
+        //- section.help 
+        //-     .main_container 
+        //-         h2 Чем и как мы Вам поможем?
+        //-         p Мы окажем Вам свесторонню помощь и будем защищать Ваши интересы.
 
-                        h4 Звонок
-                        p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+        //-         .bg_number 50-50-50
 
-        section.help 
-            .main_container 
-                h2 Чем и как мы Вам поможем?
-                p Мы окажем Вам свесторонню помощь и будем защищать Ваши интересы.
+        //-         .help_in 
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                .bg_number 50-50-50
+        //-                 p Если это возможно, оформим ДТП без участия ГИБДД.
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                .help_in 
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
+        //-                 p Если без ГИБДД нельзя, то вызовем из нужного района.
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                        p Если это возможно, оформим ДТП без участия ГИБДД.
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
+        //-                 p Проведем замеры, фото и видео фиксацию места ДТП без ошибок.
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                        p Если без ГИБДД нельзя, то вызовем из нужного района.
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
+        //-                 p Максимально честно оформим ДТП, поможем с эвакуацией авто.
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                        p Проведем замеры, фото и видео фиксацию места ДТП без ошибок.
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
+        //-                 p Полностью возьмем на себя все заботы по страховой компании.
+        //-             .help_card 
+        //-                 img(src="./images/help_icon.svg", alt="")
 
-                        p Максимально честно оформим ДТП, поможем с эвакуацией авто.
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
-
-                        p Полностью возьмем на себя все заботы по страховой компании.
-                    .help_card 
-                        img(src="./images/help_icon.svg", alt="")
-
-                        p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
+        //-                 p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
 
 
         include ../includes/footer
