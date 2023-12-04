@@ -562,7 +562,7 @@ textarea[type=text]:focus {
   gap: 40px;
 }
 .help .main_container .help_in .help_card {
-  width: calc(25% - 0px);
+  width: calc(33.3333333333% - 26.6666666667px);
   padding: 20px 33px 25px 33px;
   border-radius: 12px;
   background: #FFF;
