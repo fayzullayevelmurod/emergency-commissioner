@@ -1,0 +1,275 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+    body 
+        include ../includes/header
+
+        include ../includes/home
+        +home(
+            'last_home_wrapper',
+            [
+                {name: "Главная", url: "/"},
+                {name: "Справка"}
+            ],
+            'О службе',
+            'Как правило, ДТП – это не только оформление, но и последующий неприятный хвост: страховая, выплаты, ремонт. Все это можно сделать у нас, т.е. в одном месте. Это ключевой момент и основное удобство. Наша цель не заработать на оформлении «еврика» любой ценой и уехать. Работа службы выстроена так, что мы поможем Вам во всем. От оформления на месте, до возврата авто к его техническому и внешнему состоянию до злополучного дня ДТП.',
+            './images/service_img.png',
+            ""
+        )
+
+        section.services_history
+            .main_container 
+                h2 История становления лидера
+                h6 Мы начинали всего с двух машин в центре Калининграда и всего за три года стали одной из ведущих служб помощи при ДТП.
+
+                span 2019
+                p Основание компании
+
+                span 2020
+                p 
+                    | Открытие дополнительного «опорного» пункта на Потемкина Начало оказания услуги по независимой 
+                    b оценки повреждений после ДТП
+                
+                span 2022
+                p Открытие «опорников» на Типографской и Киевской. Старт оказания услуг по юридическому сопровождению
+
+                span 2023
+                p 
+                    | Достигнуты ключевые договоренности с партнерами для оказания 
+                    b услуги ремонта после ДТП
+                    | еще более выгодно
+
+        section.scheme_work 
+            .main_container 
+                .title Схема работы компании
+                .description Мы начинали всего с двух машин в центре Калининграда и всего за три года стали одной из ведущих служб помощи при ДТП.
+                .swiper.sheme_work_slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            .slide_content 
+                                .number 1
+                                img(src="./images/work_slide_icon_1.svg", alt="")
+                                .slide_title Диспетчер
+                                .slide_description Специалисты по оформлению ДТП. Фото и видео фиксация.
+                        .swiper-slide
+                            .slide_content 
+                                .number 2
+                                img(src="./images/work_slide_icon_2.svg", alt="")
+                                .slide_title Аварийный комиссар
+                                .slide_description Специалисты по оформлению ДТП. Фото и видео фиксация.
+                        .swiper-slide
+                            .slide_content 
+                                .number 3
+                                img(src="./images/work_slide_icon_3.svg", alt="")
+                                .slide_title Эвакуатор
+                                .slide_description Эвакуция с места ДТП до любого места хранения.
+                        .swiper-slide
+                            .slide_content 
+                                .number 4
+                                img(src="./images/work_slide_icon_4.svg", alt="")
+                                .slide_title Экспертиза
+                                .slide_description Независимая экспертиза попреждений автомобиля.
+                        .swiper-slide
+                            .slide_content 
+                                .number 5
+                                img(src="./images/work_slide_icon_5.svg", alt="")
+                                .slide_title Страховые менеджеры
+                                .slide_description Помощь с оформлением документов в страховую компанию.
+                        .swiper-slide
+                            .slide_content 
+                                .number 6
+                                img(src="./images/work_slide_icon_6.svg", alt="")
+                                .slide_title Юридическое #[br] сопровождение
+                                .slide_description Помощь в спрорах со страховыми компаниями.
+                        .swiper-slide
+                            .slide_content 
+                                .number 7
+                                img(src="./images/work_slide_icon_7.svg", alt="")
+                                .slide_title Помощь с ремонтом
+                                .slide_description Помощь с ремнотом авто после ДТП, включая кузовной ремонт.
+                .scheme_work_1_pagination
+                .description_2 
+                    | На сегодняшний момент калининградская служба аварийных комиссаров «50-50-50», пожалуйста, самая известная и надёжная в Калининграде служба помощи при ДТП «под ключ». Мы добились присутствия по всех необходимых этапах разрешения последствий после ДТП, полностью отточили все механизмы, достигли десятков договоренностей и договорных соглашений.
+
+        section.real_company 
+            .main_container 
+                h2 Полностью легальная и реальная компания
+                p Служба аварийных комиссаров «50-50-50» — полностью локальная калининградская компания с реальным, а не фейковым офисом, опытом, людьми, отзывами и сданными делами.
+
+                .swiper.real_company_cards
+                    .swiper-wrapper
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company1.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company2.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company3.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+
+                .real_company_cards_pagination
+
+                .bg_number 50-50-50
+
+        section.advantages 
+            .main_container 
+                h2 Наши преимущества — это ваше удобство
+                .advantages_in 
+                    .advantages_card 
+                        img(src="./images/advantages_card1.svg", alt="")
+                        h4 Скорость
+                        p Чтобы быстро прибыть на место ДТП «стоим» во всех районах города.
+                    .advantages_card 
+                        img(src="./images/advantages_card2.svg", alt="")
+                        h4 Ремонт после ДТП
+                        p Оформим ДТП, прожмем страховую, отремонтируем.
+                    .advantages_card 
+                        img(src="./images/advantages_card3.svg", alt="")
+                        h4 Гарантии
+                        p На все услуги мы даём гарантию, как фактическую, так и человеческую.
+
+        section.about_services 
+            .main_container 
+                .bg_number 50-50-50
+                h2 Где узнать больше о нас и наших услугах?
+                p Пожалуйста, ознакомьтесь с нашими публикациями на ведущих региональных новостных и аналитических СМИ. Они помогут Вам узнать больше о нас и о наших услугах.
+
+                .about_services_in 
+                    a(href="#")
+                        img(src="./images/services1.png", alt="")
+                    a(href="#")
+                        img(src="./images/services2.png", alt="")
+                    a(href="#")
+                        img(src="./images/services3.png", alt="")
+                    a(href="#")
+                        img(src="./images/services4.png", alt="")
+                    a(href="#")
+                        img(src="./images/services5.png", alt="")
+                    a(href="#")
+                        img(src="./images/services6.png", alt="")
+                    a(href="#")
+                        img(src="./images/services7.png", alt="")
+                    a(href="#")
+                        img(src="./images/services8.png", alt="")
+                    a(href="#")
+                        img(src="./images/services9.png", alt="")
+                    a(href="#")
+                        img(src="./images/services10.png", alt="")
+                    a(href="#")
+
+        section.work 
+            .main_container 
+                h2 Как выглядит наша работа?
+                p Обращаясь в службу помощи при ДТП «50-50-50», вы получаете квалифицированную помощь независимо от степени тяжести аварии.
+            img(src="./images/work_desktop.png", alt="").desktop_img
+                
+            img(src="./images/work_mobile.png", alt="").mobile_img
+            
+        section.partners 
+           .main_container 
+                .bg_number 50-50-50
+                h2 Наши ключевые партнеры
+                p За годы работы мы сформировали множество как устных, так и договорных отношений со всеми компаниями и инстанциями участвующими в процессах возникающих после ДТП.
+
+                .about_services_in 
+                    a(href="#")
+                        img(src="./images/partner1.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner2.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner3.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner4.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner5.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner6.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner7.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner8.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner8.png", alt="")
+                    a(href="#")
+                        img(src="./images/partner8.png", alt="")
+                    a(href="#")
+
+        section.comment 
+            .main_container 
+                h2 Отзывы
+                p Мы не пишем сами себе отзывы. Основные отзывы о нас можно найти на Яндекс.Картах, где самая жесткая модерация и исключены накрутки.
+
+                img(src="./images/comment_img.png", alt="")
+
+        section.newsline 
+            .main_container 
+                .bg_number_one 50-50-50
+
+                .bg_number 50-50-50
+
+                h2 Лента новостей
+
+                span 20.10.2023
+                p Аварийный комиссар в Калининграде о порядке действий при ДТП
+
+                span 20.10.2023
+                p Юридическое сопровождение при ДТП в Калининграде от аварийных комиссаров
+
+                span 20.10.2023
+                p Услуги аварийного комиссара в Калининграде
+
+                span 20.10.2023
+                p Калининградская служба аварийных комиссаров рассказывает, что делать, если виновник ДТП скрылся
+
+                span 20.10.2023
+                p Аварийный комиссар в Калининграде о порядке действий при ДТП
+
+                a(href="#").newsline_link Еще 
+
+        section.emergency 
+            .main_container 
+                h2 Журнал аварийного комиссара
+                p Уникальный проект не имеющий аналогов в России. Ведем позновательный журнал о жизни на дорогах Калининграда. Разбираем ситуации, даём советы, констатируем факты.
+
+                .emergency_cards 
+                    .emergency_card 
+                        .emergency_img 
+                            img(src="./images/emergency_card_new.png", alt="")
+                        span 20.11.2020
+                        p Аварийный комиссар в Калининграде о порядке действий при ДТП комиссар в Калининграде о порядке. 
+                    .emergency_card 
+                        .emergency_img 
+                            img(src="./images/emergency_card_new.png", alt="")
+                        span 20.11.2020
+                        p Аварийный комиссар в Калининграде о порядке действий при ДТП комиссар в
+                    .emergency_card 
+                        .emergency_img 
+                            img(src="./images/emergency_card_new.png", alt="")
+                        span 20.11.2020
+                        p Аварийный комиссар в Калининграде о порядке действий при ДТП комиссар в
+                
+                a(href="#").emergency_link Весь журнал 
+
+        include ../includes/footer

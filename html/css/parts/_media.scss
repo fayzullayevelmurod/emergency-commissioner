@@ -66,6 +66,75 @@
             margin-bottom: 15px;
         }
     }
+	
+		.scheme_work {
+        .main_container {
+            overflow: hidden;
+        }
+
+
+        .sheme_work_slider {
+            overflow: visible;
+            margin-bottom: 30px;
+        }
+
+        .scheme_work_1_pagination {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                opacity: 1;
+                margin: 0;
+                padding: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #DFE6FE;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #1D5DEB;
+            }
+        }
+    }
+
+    .real_company {
+        overflow: hidden;
+
+        .main_container {
+            .real_company_cards {
+                overflow: visible;
+            }
+
+            .real_company_cards_pagination {
+                position: absolute;
+                z-index: 2;
+                bottom: 48px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                    width: 10px;
+                    height: 10px;
+                    opacity: 1;
+                    background-color: #fff;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: #1D5DEB;
+                }
+            }
+        }
+    }
 
     #reference {
         .links {
@@ -192,7 +261,512 @@
     }
 }
 
+@media only screen and (max-width: 773px) {
+    .services_history {
+        margin-bottom: 80px;
+        .main_container {
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .real_company {
+        .main_container {
+            padding-top: 50px;
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 24px;
+            }
+
+            .real_company_cards {
+                padding-bottom: 80px;
+                gap: 10px;
+                .real_company_card {
+                    padding: 18px 20px;
+
+                    img {
+                        width: 38px;
+                        height: 38px;
+                    }
+
+                    h5 {
+                        margin-top: 10px;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 27px;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                    
+                    a {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 27px;
+                    }
+                }
+            }
+
+            .bg_number {
+                font-size: 80px;
+                bottom: 12px;
+                left: 0;    
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .advantages {
+        .main_container {
+            padding: 60px 0;
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 30px;
+            }
+
+            .advantages_in {
+                gap: 30px;
+                flex-direction: column;
+
+                .advantages_card {
+                    h4 {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 27px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about_services {
+        .main_container {
+            padding: 50px 0;
+
+            .bg_number {
+                top: 7px;
+                font-size: 80px;
+            }
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            .about_services_in {
+                margin-top: 20px;
+                gap: 13px;
+                a {
+                    width: calc(100% / 3 - 13px);
+                }
+
+                a:nth-child(10) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .work {
+        padding: 60px 0;
+        .main_container {
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+                margin-top: 0;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+
+        .desktop_img {
+            display: none;
+        }
+
+        .mobile_img {
+            display: block;
+        }
+    }
+
+    .partners {
+        .main_container {
+            padding: 50px 0 40px 0;
+
+            .bg_number {
+                top: 7px;
+                font-size: 80px;
+            }
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            .about_services_in {
+                margin-top: 20px;
+                gap: 13px;
+
+                a {
+                    width: calc(100% / 3 - 13px);
+                }
+
+                a:nth-child(10) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .comment {
+        padding: 60px 0;
+        .main_container {
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .newsline {
+        padding: 44px 0 57px 0;
+        .main_container {
+
+            .bg_number_one {
+                display: none;
+            }
+
+            .bg_number {
+                top: auto;
+                bottom: 314px;
+                right: -309px;
+                font-size: 165.6px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 41.501px;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 24px;
+            }
+
+            span {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+
+            .newsline_link {
+                padding: 7px 15px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .comment {
+        .main_container {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .emergency {
+        .main_container {
+            padding: 60px 0 40px 0;
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            .emergency_cards {
+                margin: 0 10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                .emergency_card {
+                    span {
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 27px;
+                    }
+                    
+                    p {
+                        margin-top: 0;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            .emergency_link {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                margin: 40px auto;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
+		#magazine_home {
+        background-image: url('../images/magazine_media_img.png');
+        
+        .breadcrumb {
+            padding-top: 9px;
+            padding-bottom: 14px;
+            ul {
+                li {
+                    a, span {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .main_container {
+            .magazine_home_in {
+                padding-bottom: 23px;
+                h1 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px;
+                    padding-bottom: 9px;
+                    margin-bottom: 0;
+                }
+
+                .magazine_date {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px; 
+                }
+            }
+
+        }
+    }
+    .main_container {
+        .magazine_text {
+            margin-bottom: 50px;
+            margin-top: 23px;
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px; 
+                margin-bottom: 27px;
+            }
+
+            p:nth-child(2) {
+                margin-bottom: 20px;
+            }
+    
+            h2 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 7px;
+            }
+
+            p {
+                margin-bottom: 19px;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .magazine_list_title {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            ul, ol {
+                li {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+
+    .scheme_work {
+        .title {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .description {
+            font-size: 12px;
+            line-height: 18px;
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 24px;
+        }
+
+        .sheme_work_slider {
+            .slide_content {
+                min-height: 201px;
+                padding: 25px 11px 25px 31px;
+
+                .number {
+                    top: 33px;
+                    right: 36px;
+                }
+
+                .slide_title {
+                    font-size: 14px;
+                    
+                    br {
+                        display: none;
+                    }
+                }
+
+                .slide_description {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .description_2 {
+            display: none;
+        }
+    }
     #chapter {
         .chapter_cards {
             margin-top: 43px;
