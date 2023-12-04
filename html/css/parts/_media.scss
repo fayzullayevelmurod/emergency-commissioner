@@ -426,7 +426,132 @@
             }
         }
     }
+
+    .index_card_in_wrapper {
+        overflow: hidden;
+
+        .index_card_in {
+            overflow: visible;
+            padding-bottom: 30px;
+        }
+
+        .scheme_work_4_pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 60px;
+
+            span {
+                padding: 0;
+                margin: 0;
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+                background-color: #DFE6FE;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #1D5DEB;
+            }
+        }
+    }
 }
+
+@media only screen and (max-width: 900px) {
+    .index_bottom {
+        margin: 40px auto;
+
+        .main_container {
+            .index_in {
+                flex-direction: column;
+                gap: 30px;
+
+                .index_card {
+                    h4 {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+
+                    a {
+                        padding: 7px 16px;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .index_bottom_text {
+        img {
+            border-radius: 20px;
+        }
+        
+        .bottom_text {
+            padding: 35px 0 50px 0;
+            p {
+                margin-bottom: 15px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+    }
+
+    #examples {
+        h4 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        .tab {
+            margin: 32px 0 28px 0;
+        }
+
+        .example_card_1_pagination {
+            margin-bottom: 30px;
+        }
+    }
+
+    .examples {
+        padding: 60px 0 40px 0;
+
+        .examples_btns {
+            a {
+                width: 110px;
+                height: 28px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 773px) {
     .services_history {
@@ -498,6 +623,11 @@
                     }
                     
                     a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100px;
+                        height: 28px;
                         font-size: 12px;
                         font-style: normal;
                         font-weight: 700;
@@ -725,6 +855,8 @@
             }
 
             .newsline_link {
+                width: 55px;
+                height: 28px;
                 padding: 7px 15px;
                 font-size: 12px;
                 font-style: normal;
@@ -785,6 +917,8 @@
             }
 
             .emergency_link {
+                width: 105px;
+                height: 28px;
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 700;

@@ -147,6 +147,40 @@ if (example_3) {
     window.addEventListener("resize", swiperCard3);
 }
 
+let init4 = false;
+let scheme_work_4;
+let example_4 = document.querySelector('.index_card_in')
+
+if (example_4) {
+    function swiperCard4() {
+        if (window.innerWidth <= 992) {
+            if (!init4) {
+                init4 = true;
+                scheme_work_4 = new Swiper(".index_card_in", {
+                    slidesPerView: 1.1,
+                    centeredSlides: true,
+                    spaceBetween: 10,
+                    loop: true,
+                    pagination: {
+                        el: ".scheme_work_4_pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        500: {
+                            slidesPerView: 2,
+                        }
+                    }
+                });
+            }
+        } else if (init4) {
+            scheme_work_4.destroy();
+            init2 = false;
+        }
+    }
+    swiperCard4();
+    window.addEventListener("resize", swiperCard4);
+}
+
 let assistance = document.querySelector('.assistance_slider');
 if (assistance) {
     let assist = new Swiper(assistance, {

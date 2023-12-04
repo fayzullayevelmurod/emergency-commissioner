@@ -137,47 +137,58 @@ html(lang="en")
 
                         p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
 
-        .main_container.cards_in.d-flex.flex-wrap.align-items-start
-            .card_item 
-                img.card_img(src="./images/prices_card_1.png", alt="")
-                .card_text 
-                    .text_title Выезд аварийного комиссара #[br] на место ДТП
-                    .text_subtitle Бесплатно
-            .card_item 
-                img.card_img(src="./images/prices_card_2.png", alt="")
-                .card_text 
-                    .text_title Фото и видеофиксация места ДТП
-                    .text_subtitle Бесплатно при заказе оформления
-            .card_item 
-                img.card_img(src="./images/prices_card_3.png", alt="")
-                .card_text 
-                    .text_title Консультация и оформление ДТП
-                    .text_subtitle 900 рублей
-            .card_item 
-                img.card_img(src="./images/prices_card_4.png", alt="")
-                .card_text 
-                    .text_title Эвакуация авто с места ДТП
-                    .text_subtitle Бесплатно
-            .card_item 
-                img.card_img(src="./images/prices_card_5.png", alt="")
-                .card_text 
-                    .text_title Подготовка документов для обращения в страховую компанию
-                    .text_subtitle От  1 000 рублей
-            .card_item 
-                img.card_img(src="./images/prices_card_6.png", alt="")
-                .card_text 
-                    .text_title Юридическое сопровождение по последствиям ДТП
-                    .text_subtitle От  1 000 рублей
-            .card_item 
-                img.card_img(src="./images/prices_card_7.png", alt="")
-                .card_text 
-                    .text_title Независимая экспертиза повреждений автомобиля
-                    .text_subtitle От 4 000 рублей
-            .card_item 
-                img.card_img(src="./images/prices_card_8.png", alt="")
-                .card_text 
-                    .text_title Ремонт автомобиля после ДТП
-                    .text_subtitle В зависимости от повреждений
+        .main_container.index_card_in_wrapper
+            .cards_in.index_card_in
+                .swiper-wrapper 
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_1.png", alt="")
+                            .card_text 
+                                .text_title Выезд аварийного комиссара #[br] на место ДТП
+                                .text_subtitle Бесплатно
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_2.png", alt="")
+                            .card_text 
+                                .text_title Фото и видеофиксация места ДТП
+                                .text_subtitle Бесплатно при заказе оформления
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_3.png", alt="")
+                            .card_text 
+                                .text_title Консультация и оформление ДТП
+                                .text_subtitle 900 рублей
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_4.png", alt="")
+                            .card_text 
+                                .text_title Эвакуация авто с места ДТП
+                                .text_subtitle Бесплатно
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_5.png", alt="")
+                            .card_text 
+                                .text_title Подготовка документов для обращения в страховую компанию
+                                .text_subtitle От  1 000 рублей
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_6.png", alt="")
+                            .card_text 
+                                .text_title Юридическое сопровождение по последствиям ДТП
+                                .text_subtitle От  1 000 рублей
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_7.png", alt="")
+                            .card_text 
+                                .text_title Независимая экспертиза повреждений автомобиля
+                                .text_subtitle От 4 000 рублей
+                    .swiper-slide
+                        .card_item 
+                            img.card_img(src="./images/prices_card_8.png", alt="")
+                            .card_text 
+                                .text_title Ремонт автомобиля после ДТП
+                                .text_subtitle В зависимости от повреждений
+            .scheme_work_4_pagination
 
         section.real_company 
             .main_container 
@@ -215,8 +226,79 @@ html(lang="en")
                                     br
                                     | ОГРНИП 31039251660004
                                 a(href="#") Проверить
-                    .real_company_cards_pagination
-                    .bg_number 50-50-50
+
+                .real_company_cards_pagination
+
+                .bg_number 50-50-50
+
+        #examples.examples 
+            .main_container.example_main_container
+                h4 Примеры работы комиссаров и ремонта после ДТП
+                p Здесь вы найдете примеры работы наших комиссаров, а также примеры восстановления авто после ДТП в нашем собственном автосервисе.
+                .tab.d-flex.justify-content-center.align-items-center
+                    a.active(href="#") Работа аваркомов
+                    a(href="#") Ремонт после ДТП 
+                .swiper.card_1.card_end 
+                    .swiper-wrapper
+                        .swiper-slide
+                            .card_content 
+                                img(src="./images/example_slide_11.png", alt="")
+                                .text Часто бывает, что даже из-за мелких царапин водители не могут договориться самостоятельно, тогда по помощь приходит (приезжает) наш человек. Если без ГИБДД нельзя, то вызовем из нужного района.
+
+                        .swiper-slide
+                            .card_content 
+                                img(src="./images/example_slide_22.png", alt="")
+                                .text 
+                                    |Совместная работа с ГИБДД, скорой
+                                    |и участниками ДТП. Эвакуированы
+                                    |все авто, оформлено честно,
+                                    |виновным признано. В последствии
+                                    |оценка ущерба и помощь в
+                                    | «выбивании» КАСКО за «тотал».
+                        .swiper-slide
+                            .card_content 
+                                img(src="./images/example_slide_33.png", alt="")
+                                .text  Оформлено без лишних эмоций и без привлечения ГИБДД по европротоколу. Нас вызвал виновник, при оформлении вину признал. Эвакуация, помощь со страховой, ремонт на нашем СТО.                                
+                .example_card_1_pagination
+                .examples_btns 
+                    a(href="#") Еще примеры
+
+        section.newsline 
+            .main_container 
+                .bg_number_one 50-50-50
+
+                .bg_number 50-50-50
+
+                h2 Прочие вопросы
+
+                .newsline_content 
+                    a.link(href="#") Если водитель попал в ДТП, согласно пунктам 2.5; 2.6 Правил ДД, он обязан... 
+
+                    p.text_1 Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют определения и уточнения новых предложений. Таким образом сложившаяся структура организации требуют определения и уточнения модели развития.
+
+                    p.text_2 Стиль маркированного списка:
+
+                    p.text_3
+                        | —  Значимость этих проблем настолько очевидна #[br]
+                        | —  Разнообразный и богатый опыт #[br]
+                        | —  Ссоответствует насущным потребностям
+
+                    p.text_4 Стиль нумерованного списка:
+
+                    ol 
+                        li Значимость этих проблем настолько очевидна
+                        li Разнообразный и богатый опыт
+                        li Ссоответствует насущным потребностям
+
+                    p.text_5 Повседневная практика показывает, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой интересный эксперимент проверки форм развития.
+
+                    .links 
+                        a.link(href="#") Если Вы не согласны о схемой ДТП и данных в протоколе происшествия 
+                        a.link(href="#") Каковы самые распространённые ошибки при оформении ДТП 
+                        a.link(href="#") Что делать, если вы попали в аварию на арендованном автомобиле 
+                        a.link(href="#") Что входит в перечень обязанностей аварийного комиссара 
+
+                a(href="#").newsline_link.index_news_link Вся справка 
 
         .index_bottom 
             .main_container 
@@ -252,7 +334,10 @@ html(lang="en")
                     | Обращаясь в службу помощи при ДТП «50-50-50», вы получаете квалифицированную помощь независимо от степени тяжести аварии. Наши сотрудники готовы предложить свои услуги на любом этапе оформления документов и решения необходимых вопросов. Всего через 15 минут после звонка, к вам прибудет специалист, эксперт по ДТП. Если вы 
                     span арендовали авто в Калининграде
                     | и попали на нем в ДТП - звоните! Мы поможем и в таком случае, чтобы владельцы автопроката вас не провели.
+
                 p 
                     | Нередко случаются ситуации, когда авария незначительная и без пострадавших, но при этом стороны не могут прийти к соглашению, кто виновен. Чтобы не привлекать дорожную инспекцию к ситуации, стоит обратиться к аварийному комиссару. Опытный специалист проведет оценку ситуации и проработает все дорожные улики и свидетельства. Таким образом, будет установлен ущерб, причиненным сторонам. Проще говоря, такой спецпосредник поможет сторонам в конце концов справедливо договориться.
 
+
+        
         include ../includes/footer
