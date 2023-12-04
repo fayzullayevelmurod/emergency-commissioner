@@ -58,6 +58,75 @@
             margin-bottom: 15px;
         }
     }
+
+    .scheme_work {
+        .main_container {
+            overflow: hidden;
+        }
+
+
+        .sheme_work_slider {
+            overflow: visible;
+            margin-bottom: 30px;
+        }
+
+        .scheme_work_1_pagination {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                opacity: 1;
+                margin: 0;
+                padding: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #DFE6FE;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #1D5DEB;
+            }
+        }
+    }
+
+    .real_company {
+        overflow: hidden;
+
+        .main_container {
+            .real_company_cards {
+                overflow: visible;
+            }
+
+            .real_company_cards_pagination {
+                position: absolute;
+                z-index: 2;
+                bottom: 48px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                    width: 10px;
+                    height: 10px;
+                    opacity: 1;
+                    background-color: #fff;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: #1D5DEB;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 773px) {
@@ -144,6 +213,7 @@
                 left: 0;    
                 margin: 0 auto;
                 display: flex;
+                justify-content: center;
             }
         }
     }
@@ -321,8 +391,14 @@
             }
 
             .bg_number {
-                font-size: 80px;
-                top: 0;
+                top: auto;
+                bottom: 314px;
+                right: -309px;
+                font-size: 165.6px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 41.501px;
+                text-transform: uppercase;
             }
             h2 {
                 font-size: 20px;
@@ -513,6 +589,50 @@
                     line-height: 17px;
                 }
             }
+        }
+    }
+
+    .scheme_work {
+        .title {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .description {
+            font-size: 12px;
+            line-height: 18px;
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 24px;
+        }
+
+        .sheme_work_slider {
+            .slide_content {
+                min-height: 201px;
+                padding: 25px 11px 25px 31px;
+
+                .number {
+                    top: 33px;
+                    right: 36px;
+                }
+
+                .slide_title {
+                    font-size: 14px;
+                    
+                    br {
+                        display: none;
+                    }
+                }
+
+                .slide_description {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .description_2 {
+            display: none;
         }
     }
 }

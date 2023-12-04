@@ -39,39 +39,97 @@ html(lang="en")
                     b услуги ремонта после ДТП
                     | еще более выгодно
 
+        section.scheme_work 
+            .main_container 
+                .title Схема работы компании
+                .description Мы начинали всего с двух машин в центре Калининграда и всего за три года стали одной из ведущих служб помощи при ДТП.
+                .swiper.sheme_work_slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            .slide_content 
+                                .number 1
+                                img(src="./images/work_slide_icon_1.svg", alt="")
+                                .slide_title Диспетчер
+                                .slide_description Специалисты по оформлению ДТП. Фото и видео фиксация.
+                        .swiper-slide
+                            .slide_content 
+                                .number 2
+                                img(src="./images/work_slide_icon_2.svg", alt="")
+                                .slide_title Аварийный комиссар
+                                .slide_description Специалисты по оформлению ДТП. Фото и видео фиксация.
+                        .swiper-slide
+                            .slide_content 
+                                .number 3
+                                img(src="./images/work_slide_icon_3.svg", alt="")
+                                .slide_title Эвакуатор
+                                .slide_description Эвакуция с места ДТП до любого места хранения.
+                        .swiper-slide
+                            .slide_content 
+                                .number 4
+                                img(src="./images/work_slide_icon_4.svg", alt="")
+                                .slide_title Экспертиза
+                                .slide_description Независимая экспертиза попреждений автомобиля.
+                        .swiper-slide
+                            .slide_content 
+                                .number 5
+                                img(src="./images/work_slide_icon_5.svg", alt="")
+                                .slide_title Страховые менеджеры
+                                .slide_description Помощь с оформлением документов в страховую компанию.
+                        .swiper-slide
+                            .slide_content 
+                                .number 6
+                                img(src="./images/work_slide_icon_6.svg", alt="")
+                                .slide_title Юридическое #[br] сопровождение
+                                .slide_description Помощь в спрорах со страховыми компаниями.
+                        .swiper-slide
+                            .slide_content 
+                                .number 7
+                                img(src="./images/work_slide_icon_7.svg", alt="")
+                                .slide_title Помощь с ремонтом
+                                .slide_description Помощь с ремнотом авто после ДТП, включая кузовной ремонт.
+                .scheme_work_1_pagination
+                .description_2 
+                    | На сегодняшний момент калининградская служба аварийных комиссаров «50-50-50», пожалуйста, самая известная и надёжная в Калининграде служба помощи при ДТП «под ключ». Мы добились присутствия по всех необходимых этапах разрешения последствий после ДТП, полностью отточили все механизмы, достигли десятков договоренностей и договорных соглашений.
+
         section.real_company 
             .main_container 
                 h2 Полностью легальная и реальная компания
                 p Служба аварийных комиссаров «50-50-50» — полностью локальная калининградская компания с реальным, а не фейковым офисом, опытом, людьми, отзывами и сданными делами.
 
-                .real_company_cards 
-                    .real_company_card 
-                        img(src="./images/real_company1.svg", alt="")
-                        h5 Юрлицо
-                        p ИП Кириченко Сергей Викторович
-                            br
-                            | ИНН 390500303344
-                            br
-                            | ОГРНИП 31039251660004
-                        a(href="#") Проверить
-                    .real_company_card 
-                        img(src="./images/real_company2.svg", alt="")
-                        h5 Юрлицо
-                        p ИП Кириченко Сергей Викторович
-                            br
-                            | ИНН 390500303344
-                            br
-                            | ОГРНИП 31039251660004
-                        a(href="#") Проверить
-                    .real_company_card 
-                        img(src="./images/real_company3.svg", alt="")
-                        h5 Юрлицо
-                        p ИП Кириченко Сергей Викторович
-                            br
-                            | ИНН 390500303344
-                            br
-                            | ОГРНИП 31039251660004
-                        a(href="#") Проверить
+                .swiper.real_company_cards
+                    .swiper-wrapper
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company1.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company2.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company3.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+
+                .real_company_cards_pagination
 
                 .bg_number 50-50-50
 

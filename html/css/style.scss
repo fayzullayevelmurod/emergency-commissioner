@@ -286,6 +286,116 @@
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .scheme_work {
+        .sheme_work_slider {
+            .swiper-wrapper {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px 42px;
+            }
+
+            .swiper-slide {
+                width: calc(25% - 126px / 4);
+            }
+        }
+
+        .scheme_work_1_pagination {
+            display: none;
+        }
+    }
+}
+
+.scheme_work {
+    .title {
+        color: #0B1F33;
+        text-align: center;
+        font-family: "Factor A", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        color: #757F88;
+        text-align: center;
+        font-family: "Factor A", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 646px;
+        margin: 0 auto 30px;
+    }
+
+    .sheme_work_slider {
+        margin-bottom: 50px;
+
+        .slide_content {
+            background-image: url('../images/work_slide_bg.png');
+            background-size: cover;
+            background-position: right top;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 25px 10px 22px 30px;
+            min-height: 270px;
+
+            img {
+                height: 60px;
+                width: auto;
+            }
+
+            .number {
+                color: #FFF;
+                font-family: "Factor A", sans-serif;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                position: absolute;
+                top: 33px;
+                right: 33px;
+            }
+
+            .slide_title {
+                color: #0B1F33;
+                font-family: "Factor A", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 27px;
+                margin: 20px 0px 8px;
+            }
+
+            .slide_description {
+                color: #757F88;
+                font-family: "Factor A", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .description_2 {
+        color: #0B1F33;
+        text-align: center;
+        font-family: "Factor A", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 824px;
+        margin: 0 auto 100px;
+    }
+}
+
 .real_company {
     overflow: hidden;
     background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
@@ -321,12 +431,8 @@
             position: relative;
             z-index: 2;
             padding-bottom: 133px;
-            display: flex;
-            align-items: center;
-            gap: 44px;
-            justify-content: space-between;
+
             .real_company_card {
-                flex: 1;
                 padding: 25px 33px 30px 33px;
                 border-radius: 12px;
                 background: #FFF;
@@ -434,6 +540,8 @@
 
 .about_services {
     background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+    overflow: hidden;
+
     .main_container {
         position: relative;
         padding: 100px 0;
@@ -450,7 +558,8 @@
             width: 100%;
             opacity: 0.5;
             top: 50px;
-            white-space: 1nowrap;
+            white-space: nowrap;
+            text-align: center;
         }
 
         h2 {
@@ -535,6 +644,8 @@
 
 .partners {
     background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+    overflow: hidden;
+
     .main_container {
         position: relative;
         padding: 100px 0;
@@ -551,7 +662,8 @@
             width: 100%;
             opacity: 0.5;
             bottom: 55px;
-            white-space: 1nowrap;
+            white-space: nowrap;
+            text-align: center;
         }
 
         h2 {
