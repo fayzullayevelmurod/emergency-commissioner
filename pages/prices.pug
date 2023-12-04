@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+
+    body 
+        include ../includes/header
+        #prices 
+            include ../includes/home
+            +home(
+                    'prices_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Услуги и цены"}
+                    ],
+                    'Услуги и цены',
+                    `Служба «50-50-50» предлагает полный комплекс услуг по оформлению и сопровождению страховых случаев после дорожно-транспортных происшествий. Мы гарантируем качественное и оперативное выполнение всех работ, что позволит Вам сэкономить время и силы.`,
+                    './images/prices_home_bg.png',
+                    ""
+                )
+            
+            .main_container.cards.d-flex.flex-wrap.align-items-start
+                .card_item 
+                    img.card_img(src="./images/prices_card_1.png", alt="")
+                    .card_text 
+                        .text_title Выезд аварийного комиссара #[br] на место ДТП
+                        .text_subtitle Бесплатно
+                .card_item 
+                    img.card_img(src="./images/prices_card_2.png", alt="")
+                    .card_text 
+                        .text_title Фото и видеофиксация места ДТП
+                        .text_subtitle Бесплатно при заказе оформления
+                .card_item 
+                    img.card_img(src="./images/prices_card_3.png", alt="")
+                    .card_text 
+                        .text_title Консультация и оформление ДТП
+                        .text_subtitle 900 рублей
+                .card_item 
+                    img.card_img(src="./images/prices_card_4.png", alt="")
+                    .card_text 
+                        .text_title Эвакуация авто с места ДТП
+                        .text_subtitle Бесплатно
+                .card_item 
+                    img.card_img(src="./images/prices_card_5.png", alt="")
+                    .card_text 
+                        .text_title Подготовка документов для обращения в страховую компанию
+                        .text_subtitle От  1 000 рублей
+                .card_item 
+                    img.card_img(src="./images/prices_card_6.png", alt="")
+                    .card_text 
+                        .text_title Юридическое сопровождение по последствиям ДТП
+                        .text_subtitle От  1 000 рублей
+                .card_item 
+                    img.card_img(src="./images/prices_card_7.png", alt="")
+                    .card_text 
+                        .text_title Независимая экспертиза повреждений автомобиля
+                        .text_subtitle От 4 000 рублей
+                .card_item 
+                    img.card_img(src="./images/prices_card_8.png", alt="")
+                    .card_text 
+                        .text_title Ремонт автомобиля после ДТП
+                        .text_subtitle В зависимости от повреждений
+
+        include ../includes/footer

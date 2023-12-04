@@ -1,0 +1,107 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+
+    body 
+        include ../includes/header
+        #rates 
+            include ../includes/home
+            +home(
+                    'rates_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Тарифы"}
+                    ],
+                    'Тарифы',
+                    `Представляем Вашему вниманию базовые тарифы на услуги аварийного комиссара в Калининграде. Здесь вы найдёте три варианта оказания услуги Каждую из которых можно заказать позвонив по телефону.`,
+                    './images/rates_home_bg.png',
+                    ""
+                )
+            
+            .main_container.cards.d-flex.flex-wrap.align-items-start 
+                .card_item 
+                    .card_content
+                        .card_title Минимум
+                        .card_subtitle Только оформление
+                        ul.sucsess 
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Выезд на место ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Фото и видеофиксация ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Консультация и оформление ДТП
+                            li.title.title_1 Только европротокол:
+                            li 900 рублей — город
+                            li 2000 рублей — область
+                            li.title Оформление для ГИБДД:
+                            li 2000 рублей — город
+                            li 2000 рублей — область
+                        a.link(href="#") 
+                            img(src="./images/card_phone_icon.svg", alt="")
+                            span 50-50-50
+                .card_item 
+                    .card_content
+                        .card_title Стандарт
+                        .card_subtitle Только оформление и эвакуация
+                        ul.sucsess 
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Выезд на место ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Фото и видеофиксация ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Консультация и оформление ДТП
+                            li.title_1 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Эвакуация авто с места ДТП в пределах города
+                            li Тариф «Минимум»
+                            li +
+                            li.title_2 Эвакуация без договора:
+                            li 4500 рублей — город
+                            li.title_3 5000 рублей — область
+                            li Эвакуация с договором – бесплатно
+                        a.link(href="#") 
+                            img(src="./images/card_phone_icon.svg", alt="")
+                            span 50-50-50
+                .card_item 
+                    .card_content
+                        .card_alert Самый выгодный
+                        .card_title Максимум
+                        .card_subtitle Подразумевает комплексную помощь и заключение договора
+                        ul.sucsess 
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Выезд на место ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Фото и видеофиксация ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Консультация и оформление ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Эвакуация авто с места ДТП для клиентов нашего сервиса
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Подготовка документов для обращения в страховую компанию
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Юридическое сопровождение по последствиям ДТП
+                            li 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Независимая экспертиза повреждений автомобиля
+                            li.title_3 
+                                img(src="./images/success_icon.svg", alt="")
+                                span Ремонт автомобиля после ДТП *
+                            li От 4 900 рублей
+                        a.link(href="#") 
+                            img(src="./images/card_phone_icon.svg", alt="")
+                            span 50-50-50
+                .card_number 50-50-50
+
+        include ../includes/footer

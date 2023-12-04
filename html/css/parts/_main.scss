@@ -10,8 +10,8 @@
 *,
 :after,
 :before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
@@ -26,7 +26,7 @@ a {
 
 dl, ol, ul {
     padding-left: 0;
-    margin-bottom: auto !important;
+    margin-bottom: auto;
 }
 
 p {
