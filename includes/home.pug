@@ -16,7 +16,9 @@ mixin home(class_name, breadcrumbs, title, subtitle, img_url, link)
             .home_wrapper
                 .home_left
                     .title= title
-                    .description= subtitle
+                    - let text = subtitle
+                    .description
+                        | !{text.replace(/\n/g, '<br/>')}
                         if link.length
                             | &nbsp;
                             a(href=link)= link 

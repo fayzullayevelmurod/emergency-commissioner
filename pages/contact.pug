@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+
+    body 
+        include ../includes/header
+        #contact 
+            include ../includes/home
+            +home(
+                    'contact_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Контакты"}
+                    ],
+                    'Контакты',
+                    `Диспетчер +7 (4012) 50-50-50
+                    Время работы: Ежедневно, круглосуточно.
+                    Офис в Калининграде куда можно приехать: ул. Менделеева, 61Б, корп. 2
+                    Email:`,
+                    './images/contact_home_bg.png',
+                    "info@avariinyi-komissar.ru"
+                )
+            
+            .main_container 
+                .address
+                    .title Адреса всех наших опорных пунктов
+                    .address_data.d-flex.flex-column
+                        div 
+                            .address_name БАЗА ЗАПАД (ГЛАВНЫЙ)
+                            a(href="#").address_value 236010, Калининград, ул. Менделеева, 61Б, корп. 2
+                        div 
+                            .address_name БАЗА СЕВЕР
+                            a(href="#").address_value 1 236001, Калининград, ул. Горького, 170
+                        div 
+                            .address_name БАЗА СЕВЕР 2
+                            a(href="#").address_value 236041, Калининград, ул. Потемкина, 1
+                        div 
+                            .address_name БАЗА ВОСТОК
+                            a(href="#").address_value 238311, Калининград, ул. Рихарда Зорге, 1
+                        div 
+                            .address_name БАЗА ЦЕНТР 
+                            a(href="#").address_value 236039, Калининград, пер. Малый, 25
+                        div 
+                            .address_name БАЗА ЮГ 1 
+                            a(href="#").address_value 236005, Калининград, ул. Киевская, 50
+                        div 
+                            .address_name БАЗА ЮГ 2
+                            a(href="#").address_value 236005, Калининград, ул. Типографская, 18
+
+                .map 
+                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad618b1f7abaedcc9929575bd2c46365aedcc8769e3af3265e0f6526f76e160b4&amp;source=constructor", height="527", frameborder="0") 
+
+                img.contact_card(src="./images/contact_card.png", alt="")
+
+        include ../includes/footer

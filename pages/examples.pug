@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+
+    body 
+        include ../includes/header
+        #examples 
+            include ../includes/home
+            +home(
+                    'examples_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Примеры"}
+                    ],
+                    'Примеры',
+                    `Здесь вы найдете примеры работы наших комиссаров, а также примеры восстановления авто после ДТП в нашем собственном автосервисе.`,
+                    './images/examples_home_bg.png',
+                    ""
+                )
+            
+            .main_container.example_main_container
+                .tab.d-flex.justify-content-center.align-items-center
+                    a.active(href="#") Работа аваркомов
+                    a(href="#") Ремонт после ДТП 
+                .swiper.card_1 
+                    .swiper-wrapper
+                        each val in [1, 2, 3, 4, 5, 6]
+                            .swiper-slide
+                                .card_content 
+                                    img(src="./images/example_slide_1.png", alt="")
+                                    .text Часто нам приходится выезжать в тихие дворы и оформлять неудачную парковку того или иного автолюбителя. Практически 100% таких случаев обходится без участия ГИБДД и без особых эмоций.
+                .example_card_1_pagination
+
+                .main_title Примеры восстановления авто после ДТП
+                .main_description 
+                    | База наших комиссаров – это территория нашего же автосервиса с мощных кузовным цехом. Причем авторемонт не придаток Службы, успешное автономное предприятие, в котором мы обслуживаем и клиентов «50-50-50». Конечно, ремонт после ДТП в нашем сервсие только по Вашему желанию.
+
+                .card_wrapper.d-flex.flex-wrap
+                    each val2 in [1, 2, 3, 4]
+                        .card_item 
+                            .swiper.card_2
+                                .swiper-wrapper 
+                                    each val3 in [2, 2, 2, 2, 2]
+                                        .swiper-slide 
+                                            img(src="./images/example_slide_2.png", alt="")
+                            .example_card_2_pagination 
+                            .text Часто нам приходится выезжать в тихие дворы и оформлять неудачную парковку того или иного автолюбителя. Практически 100% таких случаев обходится без участия ГИБДД и без особых эмоций.Часто нам приходится выезжать в тихие дворы и оформлять
+
+
+        include ../includes/footer
