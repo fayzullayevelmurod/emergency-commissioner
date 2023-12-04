@@ -2971,6 +2971,9 @@ textarea[type=text]:focus {
     font-weight: 700;
     line-height: 27px;
   }
+  .newsline .main_container .index_news_link {
+    display: none;
+  }
   .comment .main_container img {
     max-width: 100%;
   }
