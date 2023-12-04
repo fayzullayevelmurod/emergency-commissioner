@@ -329,9 +329,21 @@
 
         .assistance_in {
             margin-bottom: 97px;
+
             .assistance_card {
-                max-width: 208px;
                 text-align: center;
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 13px;
+                    right: -4px;
+                }
+
+                .icon.last {
+                    display: none;
+                }
+
                 img {
                     margin-bottom: 20px;
                 }
@@ -358,14 +370,37 @@
                 }
             }
         }
+
+        .assistance_slider_pagination {
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            display: none;
+
+            span {
+                width: 10px;
+                height: 10px;
+                margin: 0;
+                padding: 0;
+                opacity: 1;
+                background-color: #DFE6FE;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #1D5DEB;
+            }
+        }
     }
 }
 
 .help {
     padding: 100px 0 115px 0;
     background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+    overflow: hidden;
+
     .main_container {
         position: relative;
+
         h2 {
             color: $main_text;
             text-align: center;
@@ -408,11 +443,13 @@
             align-items: start;
             flex-wrap: wrap;
             gap: 40px;
+
             .help_card {
                 width: calc(100% / 4 - 0px);
                 padding: 20px 33px 25px 33px;
                 border-radius: 12px;
                 background: #FFF;
+
                 img {
                     margin-bottom: 20px;
                 }
@@ -431,6 +468,122 @@
     }
 }
 
+.index_bottom {
+    margin: 89px 0 70px 0;
+    .main_container {
+        .index_in {
+            display: flex;
+            align-items: start;
+            gap: 83px;
+
+            .index_card {
+                max-width: 345px;
+                h4 {
+                    color: $main_text;
+                    font-family: $Factor;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 27px;
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    color: $main_text;
+                    font-family: $Factor;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin-bottom: 22px;
+
+                    span {
+                        color: #1D5DEB
+                    }
+                }
+
+                a {
+                    padding: 11px 20px;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: $Factor;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    border-radius: 8px;
+                    background: #1D5DEB;
+                }
+            }
+        }
+    }
+}
+
+.index_bottom_text {
+    
+    .bottom_text {
+        padding: 35px 0 71px 0;
+        p {
+            margin: 0 auto 20px auto;
+            max-width: 876px;
+            color: #0B1F33;
+            font-family: $Factor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+    
+            span {
+                color: #1D5DEB;
+            }
+        }
+
+    }
+}
+
+.cards_in {
+    gap: 30px 52px;
+    padding-top: 80px;
+    padding-bottom: 91px;
+
+    .card_item {
+        width: calc(100% / 3 - 104px / 3);
+        border-radius: 15px;
+        overflow: hidden;
+
+        .card_img {
+            height: 184px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card_text {
+            min-height: 114px;
+            background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+            padding: 15px 20px;
+        }
+
+        .text_title {
+            color: #0B1F33;
+            font-family: "Factor A", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 27px;
+            max-width: 288px;
+            margin-bottom: 5px;
+        }
+
+        .text_subtitle {
+            color: #0B1F33;
+            font-family: "Factor A", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+}
 
 #magazine_home {
     background-image: url('../images/magazine_dektop_img.png');
@@ -485,6 +638,7 @@
 
     }
 }
+
 .magazine_text {
     margin-top: 60px;
     p {

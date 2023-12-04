@@ -82,59 +82,177 @@ html(lang="en")
                             .assistance_card 
                                 img(src="./images/assistance_slide_2.svg", alt="")
                                 img.icon(src="./images/chevron_right.svg", alt="")
-                                h4 Звонок
-                                p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+                                h4 Ожидание
+                                p Дождитесь приезда нашего аварийного комиссара. Он будет в течении 15 минут.
                         .swiper-slide 
                             .assistance_card 
-                                img(src="./images/assistance1.png", alt="")
+                                img(src="./images/assistance_slide_3.svg", alt="")
                                 img.icon(src="./images/chevron_right.svg", alt="")
-                                h4 Звонок
-                                p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+                                h4 Оценка
+                                p После прибытия на место ДТП комиссар приступит к оценке ситуации.
                         .swiper-slide 
                             .assistance_card 
-                                img(src="./images/assistance1.png", alt="")
+                                img(src="./images/assistance_slide_4.svg", alt="")
                                 img.icon(src="./images/chevron_right.svg", alt="")
-                                h4 Звонок
-                                p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+                                h4 Оформление
+                                p Принимаются решения, ДТП правильно оформляется с ГИБДД или без него.
                         .swiper-slide 
                             .assistance_card 
-                                img(src="./images/assistance1.png", alt="")
-                                img.icon(src="./images/chevron_right.svg", alt="")
-                                h4 Звонок
-                                p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+                                img(src="./images/assistance_slide_5.svg", alt="")
+                                img.icon.last(src="./images/chevron_right.svg", alt="")
+                                h4 Помощь
+                                p После оформления Вы получаете ту или иную помощь от нашей службы.
+                .assistance_slider_pagination
 
-        //- section.help 
-        //-     .main_container 
-        //-         h2 Чем и как мы Вам поможем?
-        //-         p Мы окажем Вам свесторонню помощь и будем защищать Ваши интересы.
+        section.help 
+            .main_container 
+                h2 Чем и как мы Вам поможем?
+                p Мы окажем Вам свесторонню помощь и будем защищать Ваши интересы.
 
-        //-         .bg_number 50-50-50
+                .bg_number 50-50-50
 
-        //-         .help_in 
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                .help_in 
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Если это возможно, оформим ДТП без участия ГИБДД.
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                        p Если это возможно, оформим ДТП без участия ГИБДД.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Если без ГИБДД нельзя, то вызовем из нужного района.
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                        p Если без ГИБДД нельзя, то вызовем из нужного района.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Проведем замеры, фото и видео фиксацию места ДТП без ошибок.
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                        p Проведем замеры, фото и видео фиксацию места ДТП без ошибок.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Максимально честно оформим ДТП, поможем с эвакуацией авто.
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                        p Максимально честно оформим ДТП, поможем с эвакуацией авто.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Полностью возьмем на себя все заботы по страховой компании.
-        //-             .help_card 
-        //-                 img(src="./images/help_icon.svg", alt="")
+                        p Полностью возьмем на себя все заботы по страховой компании.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
 
-        //-                 p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
+                        p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
 
+        .main_container.cards_in.d-flex.flex-wrap.align-items-start
+            .card_item 
+                img.card_img(src="./images/prices_card_1.png", alt="")
+                .card_text 
+                    .text_title Выезд аварийного комиссара #[br] на место ДТП
+                    .text_subtitle Бесплатно
+            .card_item 
+                img.card_img(src="./images/prices_card_2.png", alt="")
+                .card_text 
+                    .text_title Фото и видеофиксация места ДТП
+                    .text_subtitle Бесплатно при заказе оформления
+            .card_item 
+                img.card_img(src="./images/prices_card_3.png", alt="")
+                .card_text 
+                    .text_title Консультация и оформление ДТП
+                    .text_subtitle 900 рублей
+            .card_item 
+                img.card_img(src="./images/prices_card_4.png", alt="")
+                .card_text 
+                    .text_title Эвакуация авто с места ДТП
+                    .text_subtitle Бесплатно
+            .card_item 
+                img.card_img(src="./images/prices_card_5.png", alt="")
+                .card_text 
+                    .text_title Подготовка документов для обращения в страховую компанию
+                    .text_subtitle От  1 000 рублей
+            .card_item 
+                img.card_img(src="./images/prices_card_6.png", alt="")
+                .card_text 
+                    .text_title Юридическое сопровождение по последствиям ДТП
+                    .text_subtitle От  1 000 рублей
+            .card_item 
+                img.card_img(src="./images/prices_card_7.png", alt="")
+                .card_text 
+                    .text_title Независимая экспертиза повреждений автомобиля
+                    .text_subtitle От 4 000 рублей
+            .card_item 
+                img.card_img(src="./images/prices_card_8.png", alt="")
+                .card_text 
+                    .text_title Ремонт автомобиля после ДТП
+                    .text_subtitle В зависимости от повреждений
+
+        section.real_company 
+            .main_container 
+                h2 Полностью легальная и реальная компания
+                p Служба аварийных комиссаров «50-50-50» — полностью локальная калининградская компания с реальным, а не фейковым офисом, опытом, людьми, отзывами и сданными делами.
+                .swiper.real_company_cards
+                    .swiper-wrapper
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company1.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company2.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                        .swiper-slide
+                            .real_company_card 
+                                img(src="./images/real_company3.svg", alt="")
+                                h5 Юрлицо
+                                p ИП Кириченко Сергей Викторович
+                                    br
+                                    | ИНН 390500303344
+                                    br
+                                    | ОГРНИП 31039251660004
+                                a(href="#") Проверить
+                    .real_company_cards_pagination
+                    .bg_number 50-50-50
+
+        .index_bottom 
+            .main_container 
+                .index_in 
+                    .index_card 
+                        h4 Как вызывать ГИБДД?
+                        p 
+                            | Наберите с мобильного 
+                            span 55-25-11 
+                            | – это телефон дежурной части ГИБДД Центрального района Калининграда.
+                        
+                        a(href="#") Вызвать ГИБДД 
+
+                    .index_card 
+                        h4 Как вызывать ГИБДД?
+                        p 
+                            | В Калининграде вызвать скорую медицинскую помощь с мобильного телефона можно по единому номеру 
+                            span 103.
+                        
+                        a(href="#") Вызвать Скорую
+
+                    .index_card 
+                        h4 Как вызывать ГИБДД?
+                        p 
+                            | Выезд нашего аварийного комиссара на место ДТП с Вашим участием бесплатный. Стоимость комплексной помощи в фиксации и оформлении европротокола (когда ДТП оформляется без участия ГИБДД) – 900 рублей.
+                        
+                        a(href="#") Уточнить все цены
+            
+        .main_container.index_bottom_text
+            img(src="./images/index_bottom_img.png", alt="") 
+            .bottom_text 
+                p 
+                    | Обращаясь в службу помощи при ДТП «50-50-50», вы получаете квалифицированную помощь независимо от степени тяжести аварии. Наши сотрудники готовы предложить свои услуги на любом этапе оформления документов и решения необходимых вопросов. Всего через 15 минут после звонка, к вам прибудет специалист, эксперт по ДТП. Если вы 
+                    span арендовали авто в Калининграде
+                    | и попали на нем в ДТП - звоните! Мы поможем и в таком случае, чтобы владельцы автопроката вас не провели.
+                p 
+                    | Нередко случаются ситуации, когда авария незначительная и без пострадавших, но при этом стороны не могут прийти к соглашению, кто виновен. Чтобы не привлекать дорожную инспекцию к ситуации, стоит обратиться к аварийному комиссару. Опытный специалист проведет оценку ситуации и проработает все дорожные улики и свидетельства. Таким образом, будет установлен ущерб, причиненным сторонам. Проще говоря, такой спецпосредник поможет сторонам в конце концов справедливо договориться.
 
         include ../includes/footer

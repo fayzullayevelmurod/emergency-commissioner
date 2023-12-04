@@ -150,6 +150,23 @@ if (example_3) {
 let assistance = document.querySelector('.assistance_slider');
 if (assistance) {
     let assist = new Swiper(assistance, {
-        slidesPerView: 5
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        pagination: {
+            el: ".assistance_slider_pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 5,
+                centeredSlides: false,
+            },
+
+            768: {
+                slidesPerView: 3,
+                centeredSlides: false,
+            }
+        }
     })
 }

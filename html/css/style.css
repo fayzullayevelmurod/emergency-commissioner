@@ -462,8 +462,16 @@ textarea[type=text]:focus {
   margin-bottom: 97px;
 }
 .assistance .main_container .assistance_in .assistance_card {
-  max-width: 208px;
   text-align: center;
+  position: relative;
+}
+.assistance .main_container .assistance_in .assistance_card .icon {
+  position: absolute;
+  top: 13px;
+  right: -4px;
+}
+.assistance .main_container .assistance_in .assistance_card .icon.last {
+  display: none;
 }
 .assistance .main_container .assistance_in .assistance_card img {
   margin-bottom: 20px;
@@ -487,10 +495,28 @@ textarea[type=text]:focus {
   font-weight: 400;
   line-height: 23px;
 }
+.assistance .main_container .assistance_slider_pagination {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  display: none;
+}
+.assistance .main_container .assistance_slider_pagination span {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  background-color: #DFE6FE;
+}
+.assistance .main_container .assistance_slider_pagination .swiper-pagination-bullet-active {
+  background-color: #1D5DEB;
+}
 
 .help {
   padding: 100px 0 115px 0;
   background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+  overflow: hidden;
 }
 .help .main_container {
   position: relative;
@@ -546,6 +572,108 @@ textarea[type=text]:focus {
 }
 .help .main_container .help_in .help_card p {
   text-align: left;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.index_bottom {
+  margin: 89px 0 70px 0;
+}
+.index_bottom .main_container .index_in {
+  display: flex;
+  align-items: start;
+  gap: 83px;
+}
+.index_bottom .main_container .index_in .index_card {
+  max-width: 345px;
+}
+.index_bottom .main_container .index_in .index_card h4 {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 18px;
+}
+.index_bottom .main_container .index_in .index_card p {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 22px;
+}
+.index_bottom .main_container .index_in .index_card p span {
+  color: #1D5DEB;
+}
+.index_bottom .main_container .index_in .index_card a {
+  padding: 11px 20px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 8px;
+  background: #1D5DEB;
+}
+
+.index_bottom_text .bottom_text {
+  padding: 35px 0 71px 0;
+}
+.index_bottom_text .bottom_text p {
+  margin: 0 auto 20px auto;
+  max-width: 876px;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.index_bottom_text .bottom_text p span {
+  color: #1D5DEB;
+}
+
+.cards_in {
+  gap: 30px 52px;
+  padding-top: 80px;
+  padding-bottom: 91px;
+}
+.cards_in .card_item {
+  width: calc(33.3333333333% - 34.6666666667px);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cards_in .card_item .card_img {
+  height: 184px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards_in .card_item .card_text {
+  min-height: 114px;
+  background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+  padding: 15px 20px;
+}
+.cards_in .card_item .text_title {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  max-width: 288px;
+  margin-bottom: 5px;
+}
+.cards_in .card_item .text_subtitle {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
   font-size: 16px;
@@ -2105,6 +2233,17 @@ textarea[type=text]:focus {
     line-height: 20.049px;
     margin-bottom: 15px;
   }
+  .assistance .main_container {
+    overflow: hidden;
+  }
+  .assistance .main_container .assistance_in {
+    margin-bottom: 45px;
+    overflow: visible;
+  }
+  .assistance .main_container .assistance_slider_pagination {
+    display: flex;
+    margin-bottom: 60px;
+  }
   .accident .main_container {
     overflow: hidden;
   }
@@ -2147,6 +2286,60 @@ textarea[type=text]:focus {
   }
   .accident .main_container .scheme_work_3_pagination .swiper-pagination-bullet-active {
     background: #1D5DEB;
+  }
+  .help {
+    padding: 52px 0;
+  }
+  .help .main_container h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+  .help .main_container p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 14px;
+  }
+  .help .main_container .bg_number {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20.049px;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .help .main_container .help_in {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .help .main_container .help_in .help_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+  .help .main_container .help_in .help_card img {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .help .main_container .help_in .help_card p {
+    padding: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
   }
   .scheme_work .main_container {
     overflow: hidden;
