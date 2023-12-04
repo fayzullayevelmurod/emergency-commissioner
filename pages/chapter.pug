@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    include ../includes/head
+
+    body 
+        include ../includes/header
+        #chapter 
+            include ../includes/home
+            +home(
+                    'last_home_wrapper',
+                    [
+                        {name: "Главная", url: "/"},
+                        {name: "Раздел"}
+                    ],
+                    'Справочная информация',
+                    'Здесь вы найдете ответы на наиболее часто задаваемые вопросы по всему, что связано с ДТП, автострахованием, возмещение убытков от ДТП, обжалование автоштрафов и прочие вопросы. Раздел дополняется.',
+                    './images/chapter_home_bg.png',
+                    ""
+                )
+            
+            .main_container 
+                .chapter_cards.d-flex.flex-wrap
+                    each val in [1, 2, 3, 1, 2, 3]
+                        .card_item 
+                            img(src=`./images/chapter_card_${val}.svg`, alt="")
+                            .card_title Сразу после ДТП
+                            ul 
+                                li — Что делать сразу после ДТП
+                                li — Если Вы не согласны о схемой ДТП
+                                li — У виновника ДТП отсутствует ОСАГО
+                                li — И другие вопросы
+            
+        include ../includes/footer
