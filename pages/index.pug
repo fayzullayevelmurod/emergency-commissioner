@@ -4,6 +4,87 @@ html(lang="en")
     body 
         include ../includes/header
         
-        h1 Main
+        section.home 
+            .home_wrapper 
+                .bg_number 50-50-50
+                .home_img 
+                    img(src="./images/home_img.png", alt="")
+                .home_text 
+                    h1 Городская служба аварийных комиссаров Калининграда
+                    p Срочная помощь в оформлении ДТП. Выезд бесплатный в течении 15 минут.
+                    .home_btns 
+                        a(href="tel:505050")
+                            img(src="./images/phone_icon.svg", alt="")
+                            | 50-50-50 
+                        img(src="./images/home_icon.svg", alt="")
+
+                    .home_bottom 
+                        .home_bottom_block 
+                            span Что делать при ДТП?
+                            span Как работает Служба
+                        .home_bottom_block 
+                            span Чем и как мы Вам поможем?
+                            span Примеры работы Службы
+                        .home_bottom_block 
+                            span Вызвать ГИБДД, Скорую
+                            span Прочие вопросы
+
+        section.accident 
+            .main_container 
+                h2 Что делать при ДТП?
+                p Чтобы правильно оформить ДТП следуйте инструкции:
+
+                .accident_in 
+                    .accident_card 
+                        span.circle
+
+                        span.number 1
+
+                        p Заглушите двигатель и не меняйте положение автомобиля.
+
+        section.assistance 
+            .main_container 
+                h2 Как работает наша служба помощи при ДТП
+
+                .assistance_in 
+                    .assistance_card 
+                        img(src="./images/assistance1.png", alt="")
+
+                        h4 Звонок
+                        p Ваш звонок примет оператор и направит к Вам ближайшего комиссара.
+
+        section.help 
+            .main_container 
+                h2 Чем и как мы Вам поможем?
+                p Мы окажем Вам свесторонню помощь и будем защищать Ваши интересы.
+
+                .bg_number 50-50-50
+
+                .help_in 
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Если это возможно, оформим ДТП без участия ГИБДД.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Если без ГИБДД нельзя, то вызовем из нужного района.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Проведем замеры, фото и видео фиксацию места ДТП без ошибок.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Максимально честно оформим ДТП, поможем с эвакуацией авто.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Полностью возьмем на себя все заботы по страховой компании.
+                    .help_card 
+                        img(src="./images/help_icon.svg", alt="")
+
+                        p Сразу выплатим ущерб или отремонтируем Ваш автомобиль.
+
 
         include ../includes/footer

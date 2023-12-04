@@ -316,6 +316,283 @@ textarea[type=text]:focus {
   margin-bottom: 34px;
 }
 
+.home {
+  position: relative;
+  background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+}
+.home .home_wrapper {
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+}
+.home .home_wrapper .bg_number {
+  color: #FFF;
+  font-family: "DIN Pro", sans-serif;
+  font-size: 290.534px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20.049px;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0.5;
+  bottom: 90px;
+  white-space: nowrap;
+}
+.home .home_wrapper .home_img {
+  position: relative;
+  z-index: 2;
+}
+.home .home_wrapper .home_text {
+  margin-top: 74px;
+  position: relative;
+  z-index: 2;
+}
+.home .home_wrapper .home_text h1 {
+  max-width: 688px;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 13px;
+}
+.home .home_wrapper .home_text p {
+  max-width: 345px;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 47px;
+}
+.home .home_wrapper .home_text .home_btns {
+  display: flex;
+  align-items: start;
+  gap: 26px;
+}
+.home .home_wrapper .home_text .home_btns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 41.975px;
+  background: #FF5600;
+  padding: 8px 28px;
+  color: #FFF;
+  font-family: "DIN Pro", sans-serif;
+  font-size: 30.919px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.home .home_wrapper .home_text .home_btns a img {
+  width: 26px;
+}
+.home .home_wrapper .home_text .home_bottom {
+  margin-top: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home .home_wrapper .home_text .home_bottom .home_bottom_block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home .home_wrapper .home_text .home_bottom .home_bottom_block span {
+  border-radius: 40px;
+  background: #FFF;
+  padding: 11px 25px;
+  color: #000;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accident {
+  padding: 100px 0 178px 0;
+}
+.accident .main_container h2 {
+  color: #0B1F33;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.accident .main_container p {
+  color: #757F88;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 41px;
+}
+.accident .main_container .accident_in {
+  display: flex;
+  align-items: center;
+}
+.accident .main_container .accident_in .accident_card {
+  padding: 0 33px 0 117px;
+  position: relative;
+  width: 378px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #EDF2FE;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.accident .main_container .accident_in .accident_card .circle {
+  position: absolute;
+  left: -50px;
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: #1D5DEB;
+}
+.accident .main_container .accident_in .accident_card .number {
+  position: absolute;
+  left: 25px;
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.accident .main_container .accident_in .accident_card p {
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 228px;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.assistance .main_container h2 {
+  color: #0B1F33;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 83px;
+}
+.assistance .main_container .assistance_in {
+  margin-bottom: 97px;
+}
+.assistance .main_container .assistance_in .assistance_card {
+  max-width: 208px;
+  text-align: center;
+}
+.assistance .main_container .assistance_in .assistance_card img {
+  margin-bottom: 20px;
+}
+.assistance .main_container .assistance_in .assistance_card h4 {
+  color: #0B1F33;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 13px;
+}
+.assistance .main_container .assistance_in .assistance_card p {
+  color: #757F88;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.help {
+  padding: 100px 0 115px 0;
+  background: linear-gradient(90deg, #FAFBFF 0%, #BECEFF 100%);
+}
+.help .main_container {
+  position: relative;
+}
+.help .main_container h2 {
+  color: #0B1F33;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.help .main_container p {
+  color: #757F88;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 38px;
+}
+.help .main_container .bg_number {
+  color: #FFF;
+  font-family: "DIN Pro", sans-serif;
+  font-size: 290.534px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20.049px;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0.5;
+  bottom: -40px;
+  left: 0;
+  white-space: nowrap;
+}
+.help .main_container .help_in {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.help .main_container .help_in .help_card {
+  width: calc(25% - 0px);
+  padding: 20px 33px 25px 33px;
+  border-radius: 12px;
+  background: #FFF;
+}
+.help .main_container .help_in .help_card img {
+  margin-bottom: 20px;
+}
+.help .main_container .help_in .help_card p {
+  text-align: left;
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
 .footer {
   border-top: 10px solid #C5D3FF;
   background-color: #082665;
