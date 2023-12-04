@@ -744,6 +744,9 @@ textarea[type=text]:focus {
   .accident .accident_in .swiper-wrapper .swiper-slide {
     width: calc(33.3333333333% - 22px);
   }
+  .accident .scheme_work_3_pagination {
+    display: none;
+  }
 }
 .scheme_work .title {
   color: #0B1F33;
@@ -2107,6 +2110,43 @@ textarea[type=text]:focus {
   }
   .accident .main_container .accident_in {
     overflow: visible;
+  }
+  .accident .main_container .accident_in .accident_card {
+    padding: 10px 10px 10px 74px;
+    height: 93px;
+  }
+  .accident .main_container .accident_in .accident_card .circle {
+    width: 100px;
+    height: 100px;
+    left: -40px;
+  }
+  .accident .main_container .accident_in .accident_card .number {
+    left: 10px;
+    top: 21px;
+  }
+  .accident .main_container .accident_in .accident_card p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .accident .main_container .scheme_work_3_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .accident .main_container .scheme_work_3_pagination span {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    background: #DFE6FE;
+  }
+  .accident .main_container .scheme_work_3_pagination .swiper-pagination-bullet-active {
+    background: #1D5DEB;
   }
   .scheme_work .main_container {
     overflow: hidden;

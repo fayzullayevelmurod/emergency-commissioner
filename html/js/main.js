@@ -146,3 +146,10 @@ if (example_3) {
     swiperCard3();
     window.addEventListener("resize", swiperCard3);
 }
+
+let assistance = document.querySelector('.assistance_slider');
+if (assistance) {
+    let assist = new Swiper(assistance, {
+        slidesPerView: 5
+    })
+}

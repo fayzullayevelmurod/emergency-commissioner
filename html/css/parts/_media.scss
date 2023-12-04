@@ -102,9 +102,53 @@
     .accident {
         .main_container {
             overflow: hidden;
-            
+
             .accident_in {
                 overflow: visible;
+
+                .accident_card {
+                    padding: 10px 10px 10px 74px;
+                    height: 93px;
+
+                    .circle {
+                        width: 100px;
+                        height: 100px;
+                        left: -40px;
+                    }
+
+                    .number {
+                        left: 10px;
+                        top: 21px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px; 
+                    }
+                }
+            }
+
+            .scheme_work_3_pagination {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 10px;
+                
+                span {
+                    margin: 0;
+                    padding: 0;
+                    opacity: 1;
+                    width: 10px;
+                    height: 10px;
+                    background: #DFE6FE;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: #1D5DEB;
+                }
             }
         }
     }
