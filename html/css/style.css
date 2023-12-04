@@ -2712,6 +2712,9 @@ textarea[type=text]:focus {
     font-weight: 700;
     line-height: 27px;
   }
+  .accident {
+    padding: 60px 0 90px 0;
+  }
   .accident .main_container h2 {
     font-size: 20px;
     font-style: normal;
