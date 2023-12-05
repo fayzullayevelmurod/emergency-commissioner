@@ -106,6 +106,17 @@
             .assistance_in {
                 margin-bottom: 45px;
                 overflow: visible;
+
+                .assistance_card  {
+                    p {
+                        margin: 0 auto;
+                        max-width: 208px;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
             }
 
             .assistance_slider_pagination {
@@ -473,6 +484,7 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                        margin-bottom: 5px;
                     }
 
                     p {
@@ -480,6 +492,7 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 18px;
+                        margin-bottom: 14px;
                     }
 
                     a {
@@ -500,6 +513,7 @@
         }
         
         .bottom_text {
+            display: none;
             padding: 35px 0 50px 0;
             p {
                 margin-bottom: 15px;
@@ -508,6 +522,10 @@
                 font-weight: 400;
                 line-height: 18px;
             }
+        }
+
+        .bottom_text_media {
+            display: block;
         }
     }
 
@@ -582,7 +600,6 @@
         }
     }
 }
-
 
 @media only screen and (max-width: 773px) {
     .services_history {
@@ -843,9 +860,26 @@
     }
 
     .newsline {
-        padding: 44px 0 57px 0;
+        padding: 44px 0 37px 0;
         .main_container {
 
+            .newsline_content {
+                margin-bottom: 0;
+
+                ol, li {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+
+                .link {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+            }
             .bg_number_one {
                 display: none;
             }
@@ -1003,14 +1037,20 @@
                 }
                 
                 .home_btns {
+                    transform: translate(8px, 4px);
                     justify-content: center;
                     align-items: center;
                     gap: 9.5px;
                     margin-bottom: 180px;
 
                     a {
+                        padding: 7px 21px;
                         font-size: 21.64px;
-                        gap: 8px;
+                        gap: 7px;
+
+                        img {
+                            width: 18px;
+                        }
                     }
 
                     .icon {
@@ -1396,11 +1436,16 @@
 
                 .text_title {
                     font-size: 12px;
-                    margin-bottom: 0;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 18px;
                 }
 
                 .text_subtitle {
                     font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
                 }
             }
         }

@@ -54,6 +54,10 @@ textarea[type=text]:focus {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   background: #FFF;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -302,6 +306,8 @@ textarea[type=text]:focus {
   opacity: 0.5;
   bottom: 90px;
   white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 .home .home_wrapper .home_img {
   position: relative;
@@ -641,6 +647,63 @@ textarea[type=text]:focus {
 .index_bottom_text .bottom_text p span {
   color: #1D5DEB;
 }
+.index_bottom_text .bottom_text_media {
+  display: none;
+}
+.index_bottom_text .bottom_text_media .description {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 17px;
+}
+.index_bottom_text .bottom_text_media .description.title {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.index_bottom_text .bottom_text_media ul {
+  margin-bottom: 19px;
+}
+.index_bottom_text .bottom_text_media ol {
+  margin-bottom: 16px;
+}
+.index_bottom_text .bottom_text_media ul li, .index_bottom_text .bottom_text_media ol li {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.index_bottom_text .bottom_text_media .main_title {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  margin-top: 48px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+.index_bottom_text .bottom_text_media .main_title_2 {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+.index_bottom_text .bottom_text_media .text_left ul li, .index_bottom_text .bottom_text_media .text_left ol li {
+  font-size: 12px;
+}
 
 .cards_in {
   gap: 30px 52px;
@@ -728,6 +791,14 @@ textarea[type=text]:focus {
 
 .magazine_text {
   margin-top: 60px;
+}
+.magazine_text h2 {
+  color: #0B1F33;
+  font-family: "Factor A", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .magazine_text p {
   color: #0B1F33;
@@ -1031,7 +1102,7 @@ textarea[type=text]:focus {
   font-weight: 700;
   line-height: 27px;
   border-radius: 8px;
-  background: #0D4CD3;
+  background: #1D5DEB;
 }
 .real_company .main_container .bg_number {
   color: #FFF;
@@ -1357,7 +1428,7 @@ textarea[type=text]:focus {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  background: #0D4CD3;
+  background: #1D5DEB;
   color: #FFF;
   font-family: "Factor A", sans-serif;
   font-size: 16px;
@@ -1414,11 +1485,7 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  border-bottom: 1px solid transparent;
-  -o-border-image: url("../images/link_border_img.png");
-     border-image: url("../images/link_border_img.png");
-  border-image-slice: 20;
-  border-image-repeat: round;
+  border-bottom: 1px dashed;
 }
 
 .emergency .main_container {
@@ -1478,7 +1545,6 @@ textarea[type=text]:focus {
 .emergency .main_container .emergency_cards .emergency_card p {
   padding-left: 20px;
   text-align: left;
-  margin-top: 18px;
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
   font-size: 16px;
@@ -1504,7 +1570,7 @@ textarea[type=text]:focus {
   font-weight: 700;
   line-height: 27px;
   border-radius: 8px;
-  background: #0D4CD3;
+  background: #1D5DEB;
 }
 
 .index_card_in {
@@ -1525,11 +1591,7 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  border-bottom: 1px solid transparent;
-  -o-border-image: url("../images/link_border_img.png");
-     border-image: url("../images/link_border_img.png");
-  border-image-slice: 20;
-  border-image-repeat: round;
+  border-bottom: 1px dashed;
 }
 #reference .main_title {
   color: #0B1F33;
@@ -1725,11 +1787,8 @@ textarea[type=text]:focus {
   font-weight: 400;
   line-height: 27px;
 }
-#examples .tab a:not(.active) {
-  border-bottom: 1px solid transparent;
-  border-image-source: url("../images/tab_border.png");
-  border-image-slice: 20;
-  border-image-repeat: round;
+#examples .tab .link_dashed {
+  border-bottom: 1px dashed;
 }
 #examples .tab a.active {
   color: #000;
@@ -2057,7 +2116,7 @@ textarea[type=text]:focus {
 }
 #rates .cards ul li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 7px;
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
@@ -2374,6 +2433,14 @@ textarea[type=text]:focus {
     margin-bottom: 45px;
     overflow: visible;
   }
+  .assistance .main_container .assistance_in .assistance_card p {
+    margin: 0 auto;
+    max-width: 208px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
   .assistance .main_container .assistance_slider_pagination {
     display: flex;
     margin-bottom: 60px;
@@ -2655,12 +2722,14 @@ textarea[type=text]:focus {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 5px;
   }
   .index_bottom .main_container .index_in .index_card p {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+    margin-bottom: 14px;
   }
   .index_bottom .main_container .index_in .index_card a {
     padding: 7px 16px;
@@ -2673,6 +2742,7 @@ textarea[type=text]:focus {
     border-radius: 20px;
   }
   .index_bottom_text .bottom_text {
+    display: none;
     padding: 35px 0 50px 0;
   }
   .index_bottom_text .bottom_text p {
@@ -2681,6 +2751,9 @@ textarea[type=text]:focus {
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+  }
+  .index_bottom_text .bottom_text_media {
+    display: block;
   }
   #examples h4 {
     font-size: 20px;
@@ -2948,7 +3021,22 @@ textarea[type=text]:focus {
     margin-bottom: 20px;
   }
   .newsline {
-    padding: 44px 0 57px 0;
+    padding: 44px 0 37px 0;
+  }
+  .newsline .main_container .newsline_content {
+    margin-bottom: 0;
+  }
+  .newsline .main_container .newsline_content ol, .newsline .main_container .newsline_content li {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .newsline .main_container .newsline_content .link {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
   }
   .newsline .main_container .bg_number_one {
     display: none;
@@ -3079,14 +3167,19 @@ textarea[type=text]:focus {
     margin-bottom: 20px;
   }
   .home .home_wrapper .home_text .home_btns {
+    transform: translate(8px, 4px);
     justify-content: center;
     align-items: center;
     gap: 9.5px;
     margin-bottom: 180px;
   }
   .home .home_wrapper .home_text .home_btns a {
+    padding: 7px 21px;
     font-size: 21.64px;
-    gap: 8px;
+    gap: 7px;
+  }
+  .home .home_wrapper .home_text .home_btns a img {
+    width: 18px;
   }
   .home .home_wrapper .home_text .home_btns .icon {
     width: 36px;
@@ -3368,10 +3461,15 @@ textarea[type=text]:focus {
   }
   #prices .cards .card_item .text_title {
     font-size: 12px;
-    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
   }
   #prices .cards .card_item .text_subtitle {
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
   }
   #rates .cards {
     padding-top: 50px;
