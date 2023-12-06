@@ -99,6 +99,16 @@
         }
     }
 
+    #price {
+        .text_wrapper {
+            .text_left {
+                .description_top {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
     .assistance {
         .main_container {
             overflow: hidden;
@@ -241,6 +251,19 @@
                         line-height: 18px;
                     }
                 }
+            }
+        }
+    }
+
+    .index_card_in_wrapper {
+        .cards_in {
+            padding-top: 60px;
+            .cards_in_title {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 24px;
             }
         }
     }

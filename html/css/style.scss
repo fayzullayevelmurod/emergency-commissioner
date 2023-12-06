@@ -83,6 +83,11 @@
                 font-weight: 400;
                 line-height: 27px;
                 white-space: nowrap;
+                transition: .2s ease;
+
+                &:hover {
+                    color: #023bb4;
+                }
             }
         }
     }
@@ -199,6 +204,11 @@
                     font-weight: 700;
                     line-height: normal;
                     text-transform: uppercase;
+                    transition: .2s ease;
+
+                    &:hover {
+                        background: #d94a03;
+                    }
 
                     img {
                         width: 26px;
@@ -469,6 +479,22 @@
     }
 }
 
+.index_card_in_wrapper {
+    .cards_in {
+        .cards_in_title {
+            max-width: 1050px;
+            color: #0B1F33;
+            text-align: center;
+            font-family: Factor A;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 70px;
+        }
+    }
+}
+
 .index_bottom {
     margin: 89px 0 70px 0;
     .main_container {
@@ -514,6 +540,11 @@
                     line-height: normal;
                     border-radius: 8px;
                     background: #1D5DEB;
+                    transition: .2s ease;
+
+                    &:hover {
+                        background: #023bb4;
+                    }
                 }
             }
         }
@@ -1062,6 +1093,11 @@
                     line-height: 27px;
                     border-radius: 8px;
                     background: #1D5DEB;
+                    transition: .2s ease;
+
+                    &:hover {
+                        background: #023bb4;
+                    }
                 }
             }
         }
@@ -1431,10 +1467,20 @@
             line-height: 27px;
             width: 78px;
             height: 39px;
+            transition: .2s ease;
+
+            &:hover {
+                background: #023bb4;
+            }
         }
 
         .index_news_link {
             width: 136px;
+            transition: .2s ease;
+
+            &:hover {
+                background: #023bb4;
+            }
         }
 
         .newsline_content {
@@ -1490,6 +1536,11 @@
                 font-weight: 400;
                 line-height: 27px;
                 border-bottom: 1px dashed;
+                transition: .2s ease;
+
+                &:hover {
+                    color: #023bb4;
+                }
             }
         }
     }
@@ -1586,6 +1637,11 @@
             line-height: 27px;
             border-radius: 8px;
             background: #1D5DEB;
+            transition: .2s ease;
+
+            &:hover {
+                background: #022b83;
+            }
         }
     }
 }
@@ -1615,6 +1671,11 @@
             // border-image-slice: 20;
             // border-image-repeat: round;
             border-bottom: 1px dashed;
+            transition: .2s ease;
+
+            &:hover {
+                color: #022b86;
+            }
         }
     }
 
@@ -1716,6 +1777,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 27px;
+            transition: .2s ease;
+
+            &:hover {
+                color: #013096;
+            }
         }
     }
 
@@ -1757,6 +1823,11 @@
 
         a {
             text-decoration-line: underline;
+            transition: .2s ease;
+
+            &:hover {
+                opacity: .6;
+            }
         }
     }
 }
@@ -1840,6 +1911,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 27px;
+            transition: .2s ease;
+
+            &:hover {
+                color: $main_text2;
+            }
         }
         
         .link_dashed {
@@ -1976,6 +2052,11 @@
             font-style: normal;
             font-weight: 700;
             line-height: 27px;
+            transition: .2s ease;
+
+            &:hover {
+                background: #023bb4;
+            }
         }
     }
 }
@@ -1987,6 +2068,10 @@
 
         .text_left {
             width: calc(100% * 614px / 1201px);
+
+            .description_top {
+                margin-bottom: 30px;
+            }
 
             ul, ol {
                 padding-left: 13px;
@@ -2108,6 +2193,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 27px;
+                transition: .2s ease;
+
+                &:hover {
+                    color: #013198;
+                }
             }
         }
     }
@@ -2229,7 +2319,7 @@
         ul {
             li {
                 display: flex;
-                align-items: center;
+                align-items: start;
                 gap: 7px;
                 color: #0B1F33;
                 font-family: "Factor A", sans-serif;
@@ -2237,6 +2327,10 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 27px;
+
+                img {
+                    margin-top: 3px;
+                }
             }
 
             li.title {

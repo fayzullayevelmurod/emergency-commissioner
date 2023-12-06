@@ -32,6 +32,11 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        transition: .2s ease;
+
+                        &:hover {
+                            color: $main_text2;
+                        }
                     }
                 }
             }
@@ -39,6 +44,14 @@
             .footer_messenger {
                 display: block;
                 width: 100%;
+
+                img {
+                    transition: .2s ease;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
             }
         }
 
@@ -59,6 +72,14 @@
 
             .download_app {
                 margin-bottom: 28px;
+                a {
+                    img {
+                        transition: .2s ease;
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
+                }
             }
 
             p {

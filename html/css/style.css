@@ -106,6 +106,10 @@ textarea[type=text]:focus {
   line-height: normal;
   text-transform: uppercase;
   background-color: #FF5600;
+  transition: 0.2s ease;
+}
+.header .header_contact a:hover {
+  background: #d94a03;
 }
 .header .header_contact a img {
   width: 18px;
@@ -253,6 +257,10 @@ textarea[type=text]:focus {
   font-weight: 400;
   line-height: 27px;
   white-space: nowrap;
+  transition: 0.2s ease;
+}
+#home_2 .home_wrapper .description a:hover {
+  color: #023bb4;
 }
 #home_2 .bg_number {
   color: #FFF;
@@ -357,6 +365,10 @@ textarea[type=text]:focus {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  transition: 0.2s ease;
+}
+.home .home_wrapper .home_text .home_btns a:hover {
+  background: #d94a03;
 }
 .home .home_wrapper .home_text .home_btns a img {
   width: 26px;
@@ -586,6 +598,18 @@ textarea[type=text]:focus {
   line-height: 27px;
 }
 
+.index_card_in_wrapper .cards_in .cards_in_title {
+  max-width: 1050px;
+  color: #0B1F33;
+  text-align: center;
+  font-family: Factor A;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+
 .index_bottom {
   margin: 89px 0 70px 0;
 }
@@ -629,6 +653,10 @@ textarea[type=text]:focus {
   line-height: normal;
   border-radius: 8px;
   background: #1D5DEB;
+  transition: 0.2s ease;
+}
+.index_bottom .main_container .index_in .index_card a:hover {
+  background: #023bb4;
 }
 
 .index_bottom_text .bottom_text {
@@ -1103,6 +1131,10 @@ textarea[type=text]:focus {
   line-height: 27px;
   border-radius: 8px;
   background: #1D5DEB;
+  transition: 0.2s ease;
+}
+.real_company .main_container .real_company_cards .real_company_card a:hover {
+  background: #023bb4;
 }
 .real_company .main_container .bg_number {
   color: #FFF;
@@ -1437,9 +1469,17 @@ textarea[type=text]:focus {
   line-height: 27px;
   width: 78px;
   height: 39px;
+  transition: 0.2s ease;
+}
+.newsline .main_container .newsline_link:hover {
+  background: #023bb4;
 }
 .newsline .main_container .index_news_link {
   width: 136px;
+  transition: 0.2s ease;
+}
+.newsline .main_container .index_news_link:hover {
+  background: #023bb4;
 }
 .newsline .main_container .newsline_content {
   max-width: 778px;
@@ -1486,6 +1526,10 @@ textarea[type=text]:focus {
   font-weight: 400;
   line-height: 27px;
   border-bottom: 1px dashed;
+  transition: 0.2s ease;
+}
+.newsline .main_container .newsline_content .link:hover {
+  color: #023bb4;
 }
 
 .emergency .main_container {
@@ -1571,6 +1615,10 @@ textarea[type=text]:focus {
   line-height: 27px;
   border-radius: 8px;
   background: #1D5DEB;
+  transition: 0.2s ease;
+}
+.emergency .main_container .emergency_link:hover {
+  background: #022b83;
 }
 
 .index_card_in {
@@ -1592,6 +1640,10 @@ textarea[type=text]:focus {
   font-weight: 400;
   line-height: 27px;
   border-bottom: 1px dashed;
+  transition: 0.2s ease;
+}
+#reference .links a:hover {
+  color: #022b86;
 }
 #reference .main_title {
   color: #0B1F33;
@@ -1680,6 +1732,10 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  transition: 0.2s ease;
+}
+#contact .address .address_value:hover {
+  color: #013096;
 }
 #contact .map iframe {
   width: 100%;
@@ -1714,6 +1770,10 @@ textarea[type=text]:focus {
 }
 #clients .main_description a {
   text-decoration-line: underline;
+  transition: 0.2s ease;
+}
+#clients .main_description a:hover {
+  opacity: 0.6;
 }
 
 #journal .journal_cards {
@@ -1786,6 +1846,10 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  transition: 0.2s ease;
+}
+#examples .tab a:hover {
+  color: #757F88;
 }
 #examples .tab .link_dashed {
   border-bottom: 1px dashed;
@@ -1898,6 +1962,10 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 700;
   line-height: 27px;
+  transition: 0.2s ease;
+}
+.examples .examples_btns a:hover {
+  background: #023bb4;
 }
 
 #price .text_wrapper {
@@ -1906,6 +1974,9 @@ textarea[type=text]:focus {
 }
 #price .text_wrapper .text_left {
   width: 51.1240632806%;
+}
+#price .text_wrapper .text_left .description_top {
+  margin-bottom: 30px;
 }
 #price .text_wrapper .text_left ul, #price .text_wrapper .text_left ol {
   padding-left: 13px;
@@ -2011,6 +2082,10 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  transition: 0.2s ease;
+}
+#price .text_wrapper .links a:hover {
+  color: #013198;
 }
 
 #prices .cards {
@@ -2116,7 +2191,7 @@ textarea[type=text]:focus {
 }
 #rates .cards ul li {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 7px;
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
@@ -2124,6 +2199,9 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+}
+#rates .cards ul li img {
+  margin-top: 3px;
 }
 #rates .cards ul li.title {
   margin-top: 20px;
@@ -2260,10 +2338,20 @@ textarea[type=text]:focus {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.2s ease;
+}
+.footer .main_container .footer_top_left ul li a:hover {
+  color: #757F88;
 }
 .footer .main_container .footer_top_left .footer_messenger {
   display: block;
   width: 100%;
+}
+.footer .main_container .footer_top_left .footer_messenger img {
+  transition: 0.2s ease;
+}
+.footer .main_container .footer_top_left .footer_messenger img:hover {
+  opacity: 0.8;
 }
 .footer .main_container .footer_top_center p {
   max-width: 348px;
@@ -2277,6 +2365,12 @@ textarea[type=text]:focus {
 }
 .footer .main_container .footer_top_right .download_app {
   margin-bottom: 28px;
+}
+.footer .main_container .footer_top_right .download_app a img {
+  transition: 0.2s ease;
+}
+.footer .main_container .footer_top_right .download_app a img:hover {
+  opacity: 0.8;
 }
 .footer .main_container .footer_top_right p {
   margin-bottom: 34px;
@@ -2426,6 +2520,9 @@ textarea[type=text]:focus {
     line-height: 20.049px;
     margin-bottom: 15px;
   }
+  #price .text_wrapper .text_left .description_top {
+    margin-bottom: 25px;
+  }
   .assistance .main_container {
     overflow: hidden;
   }
@@ -2541,6 +2638,16 @@ textarea[type=text]:focus {
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+  }
+  .index_card_in_wrapper .cards_in {
+    padding-top: 60px;
+  }
+  .index_card_in_wrapper .cards_in .cards_in_title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
   }
   .scheme_work .main_container {
     overflow: hidden;

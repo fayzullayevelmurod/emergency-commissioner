@@ -1,4 +1,16 @@
 .header {
+    // transition: .2s ease;
+
+    // &:hover {
+    //     background: #023bb4;
+    // }
+
+
+    // transition: .2s ease;
+
+    // &:hover {
+    //     color: $main_text2;
+    // }
     position: sticky;
     top: 0;
     width: 100%;
@@ -56,6 +68,11 @@
             line-height: normal;
             text-transform: uppercase;
             background-color: #FF5600;
+            transition: .2s ease;
+
+            &:hover {
+                background: #d94a03;
+            }
 
             img {
                 width: 18px;
