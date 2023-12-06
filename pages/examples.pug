@@ -21,17 +21,17 @@ html(lang="en")
             .main_container.example_main_container
                 .tab.d-flex.justify-content-center.align-items-center
                     a.active(href="#") Работа аваркомов
-                    a(href="#") Ремонт после ДТП 
+                    a(href="#accident") Ремонт после ДТП 
                 .swiper.card_1 
                     .swiper-wrapper
                         each val in [1, 2, 3, 4, 5, 6]
                             .swiper-slide
-                                .card_content 
+                                a(href="#").card_content 
                                     img(src="./images/example_slide_1.png", alt="")
                                     .text Часто нам приходится выезжать в тихие дворы и оформлять неудачную парковку того или иного автолюбителя. Практически 100% таких случаев обходится без участия ГИБДД и без особых эмоций.
                 .example_card_1_pagination
 
-                .main_title Примеры восстановления авто после ДТП
+                #accident.main_title Примеры восстановления авто после ДТП
                 .main_description 
                     | База наших комиссаров – это территория нашего же автосервиса с мощных кузовным цехом. Причем авторемонт не придаток Службы, успешное автономное предприятие, в котором мы обслуживаем и клиентов «50-50-50». Конечно, ремонт после ДТП в нашем сервсие только по Вашему желанию.
 
