@@ -686,7 +686,7 @@ textarea[type=text]:focus {
 .index_bottom_text .bottom_text_media .description {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -695,7 +695,7 @@ textarea[type=text]:focus {
 .index_bottom_text .bottom_text_media .description.title {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -710,7 +710,7 @@ textarea[type=text]:focus {
 .index_bottom_text .bottom_text_media .ul .li, .index_bottom_text .bottom_text_media .ol .li {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
@@ -720,7 +720,7 @@ textarea[type=text]:focus {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
   margin-top: 48px;
-  font-size: 20px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -729,14 +729,14 @@ textarea[type=text]:focus {
 .index_bottom_text .bottom_text_media .main_title_2 {
   color: #0B1F33;
   font-family: "Factor A", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 9px;
 }
 .index_bottom_text .bottom_text_media .ul .li, .index_bottom_text .bottom_text_media .ol .li {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .cards_in {
@@ -2890,6 +2890,21 @@ textarea[type=text]:focus {
   .index_bottom_text .bottom_text_media {
     display: block;
     margin-bottom: 50px;
+  }
+  .index_bottom_text .bottom_text_media .description {
+    font-size: 12px;
+  }
+  .index_bottom_text .bottom_text_media .main_title {
+    font-size: 20px;
+  }
+  .index_bottom_text .bottom_text_media .main_title_2 {
+    font-size: 16px;
+  }
+  .index_bottom_text .bottom_text_media .description.title {
+    font-size: 12px;
+  }
+  .index_bottom_text .bottom_text_media .ul .li, .index_bottom_text .bottom_text_media .ol .li {
+    font-size: 12px;
   }
   #examples h4 {
     font-size: 20px;

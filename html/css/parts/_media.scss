@@ -558,6 +558,28 @@
         .bottom_text_media {
             display: block;
             margin-bottom: 50px;
+
+            .description {
+                font-size: 12px;
+            }
+
+            .main_title {
+                font-size: 20px;
+            }
+
+            .main_title_2 {
+                font-size: 16px;
+            }
+
+            .description.title {
+                font-size: 12px;
+            }
+
+            .ul, .ol {
+                .li {
+                    font-size: 12px;
+                }
+            }
         }
     }
 

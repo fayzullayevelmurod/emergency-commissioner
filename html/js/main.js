@@ -204,3 +204,26 @@ if (assistance) {
         }
     })
 }
+
+let example_index = document.querySelector('.example_index') 
+if (example_index) {
+    let tabl_btn = example_index.querySelectorAll('.tab a');
+    tabl_btn.forEach(item => {
+        item.onclick = e => {
+            e.preventDefault();
+            tabl_btn.forEach(a => {
+                a.classList.remove('active');
+            })
+            item.classList.add('active')
+            let attr = item.getAttribute('data-id')
+            let tabe_pane = document.querySelectorAll('.example_index .tab-pane');
+            tabe_pane.forEach(el => {
+                el.classList.remove('active');
+                el.classList.remove('show');
+            });
+
+            document.querySelector('#' + attr).classList.add('show')
+            document.querySelector('#' + attr).classList.add('active')
+        }
+    })
+}
